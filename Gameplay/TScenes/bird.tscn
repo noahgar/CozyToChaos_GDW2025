@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbdnlj8afwdck"]
+
+[ext_resource type="PackedScene" uid="uid://ceybygcrggcjj" path="res://Models/Blockout/Bird/Bird.fbx" id="1_g5k2s"]
+
+[node name="Bird" instance=ExtResource("1_g5k2s")]
+
+[node name="Cube_007" parent="." index="0"]
+cast_shadow = 0

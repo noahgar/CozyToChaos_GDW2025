@@ -1,20 +1,20 @@
 [gd_scene load_steps=13 format=3 uid="uid://xk4lapgrk5i3"]
 
 [ext_resource type="Texture2D" uid="uid://b3yvsclhgwl7c" path="res://Textures/sky_19_2k.png" id="1_5lt6y"]
-[ext_resource type="Material" uid="uid://cay5ofwxqnnrg" path="res://Materials/Blockout/Concrete.tres" id="3_8k7wh"]
+[ext_resource type="Material" uid="uid://cay5ofwxqnnrg" path="res://Models/Blockout/Materials/Concrete.tres" id="3_8k7wh"]
 [ext_resource type="PackedScene" uid="uid://dtke7a5iy4yeo" path="res://Models/Blockout/concept_art.tscn" id="3_iufkg"]
-[ext_resource type="Material" uid="uid://cypk8pvmmvupr" path="res://Materials/Blockout/Fence.tres" id="4_iufkg"]
+[ext_resource type="Material" uid="uid://cypk8pvmmvupr" path="res://Models/Blockout/Materials/Fence.tres" id="4_iufkg"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_wicfy"]
 panorama = ExtResource("1_5lt6y")
 
-[sub_resource type="Sky" id="Sky_cguwc"]
+[sub_resource type="Sky" id="Sky_iufkg"]
 sky_material = SubResource("PanoramaSkyMaterial_wicfy")
 radiance_size = 6
 
 [sub_resource type="Environment" id="Environment_wicfy"]
 background_mode = 2
-sky = SubResource("Sky_cguwc")
+sky = SubResource("Sky_iufkg")
 ambient_light_sky_contribution = 0.0
 ambient_light_energy = 0.0
 reflected_light_source = 1

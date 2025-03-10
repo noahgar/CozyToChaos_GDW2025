@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://clgamvp7tr8dc"]
+
+[ext_resource type="PackedScene" uid="uid://cwuq4pk44qead" path="res://Models/Blockout/BirdHouse/Vogelhaus_Innen .fbx" id="1_t5mjm"]
+
+[node name="BirdHouse" type="Node3D"]
+
+[node name="Vogelhaus_Innen " parent="." instance=ExtResource("1_t5mjm")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -2.86109, 1.90735e-06, 0.237408)

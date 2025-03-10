@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsot7ffl8sns5"]
+
+[ext_resource type="Script" uid="uid://b6y3bwho323jh" path="res://Gameplay/Scripts/PickableObject.gd" id="1_85sxc"]
+[ext_resource type="PackedScene" uid="uid://240m7xqyjlsi" path="res://Models/PickableObjects/Asthaufen.fbx" id="2_85sxc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3ol7"]
+size = Vector3(0.323853, 0.136963, 1.32935)
+
+[node name="Asthaufen" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+script = ExtResource("1_85sxc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(0.976186, 0, 0.216933, 0, 1, 0, -0.216933, 0, 0.976186, 0.404413, 0.0430218, 0.0790766)
+shape = SubResource("BoxShape3D_m3ol7")
+
+[node name="Asthaufen" parent="RigidBody3D" instance=ExtResource("2_85sxc")]
+transform = Transform3D(0.418012, 0, 0, 0, 0.418012, 0, 0, 0, 0.418012, 4.50199, -0.305435, 12.0541)

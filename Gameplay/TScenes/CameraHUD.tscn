@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddhdulhfelkqg"]
+
+[ext_resource type="Script" path="res://Gameplay/Scripts/CameraRotation.gd" id="1_carwu"]
+[ext_resource type="PackedScene" uid="uid://bbdnlj8afwdck" path="res://Gameplay/TScenes/bird.tscn" id="2_0x035"]
+[ext_resource type="Script" path="res://Gameplay/Scripts/Inventory.gd" id="3_eg66j"]
+
+[node name="CameraHUD" type="Node3D"]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)
+script = ExtResource("1_carwu")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 29.8342, 45)
+projection = 1
+size = 10.0
+near = 0.001
+
+[node name="Bird" parent="." instance=ExtResource("2_0x035")]
+transform = Transform3D(-5.62213, 0, -0.224039, 0, 5.6266, 0, 0.224039, 0, -5.62213, 31.1374, 21.677, 108.21)
+script = ExtResource("3_eg66j")
+
+[node name="PickableObjectSlot" type="Node3D" parent="."]
+transform = Transform3D(0.709172, 0.0412322, 0.703829, -0.704157, 0.0912411, 0.704157, -0.0351842, -0.994975, 0.0937394, -4.91456, 25.854, 41.1834)
