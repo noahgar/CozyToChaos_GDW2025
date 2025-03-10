@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=3 uid="uid://d02wcs6ko172k"]
+
+[ext_resource type="Shader" uid="uid://cx7ow7xyhvybe" path="res://VFX/RainShader.tres" id="1_om04d"]
+[ext_resource type="Texture2D" uid="uid://ctt6d6070ts7b" path="res://VFX/raindropTex.png" id="2_5xvpn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qsjrb"]
+render_priority = 0
+shader = ExtResource("1_om04d")
+shader_parameter/Width = 0.05
+shader_parameter/RaindropTex = ExtResource("2_5xvpn")
+
+[sub_resource type="Gradient" id="Gradient_58qq1"]
+colors = PackedColorArray(0.68, 0.68, 0.68, 0, 0.572988, 0.572988, 0.572988, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_q0slf"]
+gradient = SubResource("Gradient_58qq1")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_c264a"]
+emission_shape = 3
+emission_box_extents = Vector3(10, 2, 10)
+angle_min = 1.07288e-05
+angle_max = 1.07288e-05
+direction = Vector3(0, -1, 0)
+spread = 0.0
+initial_velocity_min = 15.0
+initial_velocity_max = 20.0
+gravity = Vector3(0, 0, 0)
+color_ramp = SubResource("GradientTexture1D_q0slf")
+
+[sub_resource type="QuadMesh" id="QuadMesh_6xh1p"]
+
+[node name="RainVFX" type="GPUParticles3D"]
+material_override = SubResource("ShaderMaterial_qsjrb")
+cast_shadow = 0
+amount = 60
+lifetime = 0.5
+local_coords = true
+process_material = SubResource("ParticleProcessMaterial_c264a")
+draw_pass_1 = SubResource("QuadMesh_6xh1p")

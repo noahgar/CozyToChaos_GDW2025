@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://bdjhggux547np"]
+
+[ext_resource type="Texture2D" uid="uid://ctt6d6070ts7b" path="res://VFX/raindropTex.png" id="1_cvvun"]
+
+[sub_resource type="Curve" id="Curve_0f5h7"]
+_data = [Vector2(0, 0.0237797), 0.0, 4.21907, 0, 0, Vector2(0.515625, 1), 0.0226371, 0.0226371, 0, 0, Vector2(1, 0), -5.01961, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_qsjrb"]
+curve = SubResource("Curve_0f5h7")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_0f5h7"]
+emission_shape = 3
+emission_box_extents = Vector3(10, 5, 10)
+spread = 8.0
+initial_velocity_min = 12.0
+initial_velocity_max = 16.0
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource("CurveTexture_qsjrb")
+turbulence_enabled = true
+turbulence_noise_strength = 9.51
+turbulence_noise_scale = 0.497
+turbulence_noise_speed_random = 0.0
+turbulence_influence_min = 0.01
+turbulence_influence_max = 0.04
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qsjrb"]
+blend_mode = 1
+albedo_color = Color(1, 1, 1, 0.329412)
+albedo_texture = ExtResource("1_cvvun")
+disable_receive_shadows = true
+use_particle_trails = true
+
+[sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_c264a"]
+material = SubResource("StandardMaterial3D_qsjrb")
+size = 0.3
+section_segments = 4
+
+[node name="windVFX" type="GPUParticles3D"]
+amount = 15
+lifetime = 3.0
+local_coords = true
+trail_enabled = true
+trail_lifetime = 0.82
+process_material = SubResource("ParticleProcessMaterial_0f5h7")
+draw_pass_1 = SubResource("RibbonTrailMesh_c264a")
