@@ -1,4 +1,4 @@
-[gd_resource type="VisualShader" load_steps=38 format=3 uid="uid://dyc7gatjwbjcw"]
+[gd_resource type="VisualShader" load_steps=36 format=3 uid="uid://dyc7gatjwbjcw"]
 
 [sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_lsw1g"]
 output_port_for_preview = 0
@@ -42,15 +42,8 @@ default_input_values = [0, Quaternion(0, 0, 0, 0), 1, Quaternion(0, 0, 0, 0)]
 op_type = 2
 operator = 2
 
-[sub_resource type="VisualShaderNodeTransformVecMult" id="VisualShaderNodeTransformVecMult_2iv50"]
-default_input_values = [0, Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0), 1, Vector3(0.5, 1, 0)]
-operator = 2
-
 [sub_resource type="VisualShaderNodeDotProduct" id="VisualShaderNodeDotProduct_r1r52"]
 default_input_values = [0, Vector3(0, 0, 0), 1, Vector3(0, 1, 0)]
-
-[sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_tj7ed"]
-input_name = "view_matrix"
 
 [sub_resource type="VisualShaderNodeVectorFunc" id="VisualShaderNodeVectorFunc_58lwk"]
 default_input_values = [0, Quaternion(0, 0, 0, 0)]
@@ -103,8 +96,6 @@ operator = 2
 
 [sub_resource type="VisualShaderNodeVectorFunc" id="VisualShaderNodeVectorFunc_r1r52"]
 
-[sub_resource type="VisualShaderNodeVectorFunc" id="VisualShaderNodeVectorFunc_tj7ed"]
-
 [sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_06cu1"]
 input_name = "attenuation"
 
@@ -113,6 +104,9 @@ default_input_values = [0, 0.5, 1, 0.0]
 
 [sub_resource type="VisualShaderNodeFloatOp" id="VisualShaderNodeFloatOp_fq6qa"]
 operator = 2
+
+[sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_7hw4e"]
+input_name = "light"
 
 [sub_resource type="VisualShaderNodeFloatOp" id="VisualShaderNodeFloatOp_hswux"]
 operator = 2
@@ -170,21 +164,12 @@ void light() {
 	vec3 n_out3p0 = NORMAL;
 
 
-// Input:20
-	mat4 n_out20p0 = VIEW_MATRIX;
-
-
-// TransformVectorMult:19
-	vec3 n_in19p1 = vec3(0.50000, 1.00000, 0.00000);
-	vec3 n_out19p0 = (n_out20p0 * vec4(n_in19p1, 0.0)).xyz;
-
-
-// VectorFunc:36
-	vec3 n_out36p0 = normalize(n_out19p0);
+// Input:42
+	vec3 n_out42p0 = LIGHT;
 
 
 // DotProduct:2
-	float n_out2p0 = dot(n_out3p0, n_out36p0);
+	float n_out2p0 = dot(n_out3p0, n_out42p0);
 
 
 // FloatOp:9
@@ -250,8 +235,7 @@ void light() {
 
 
 // TransformVectorMult:24
-	vec3 n_in24p1 = vec3(0.50000, 1.00000, 0.00000);
-	vec3 n_out24p0 = (n_out25p0 * vec4(n_in24p1, 0.0)).xyz;
+	vec3 n_out24p0 = (n_out25p0 * vec4(n_out42p0, 0.0)).xyz;
 
 
 // VectorFunc:35
@@ -305,13 +289,13 @@ void light() {
 "
 nodes/fragment/0/position = Vector2(20, 180)
 nodes/fragment/18/node = SubResource("VisualShaderNodeColorParameter_lsw1g")
-nodes/fragment/18/position = Vector2(-700, 280)
+nodes/fragment/18/position = Vector2(-1120, 240)
 nodes/fragment/20/node = SubResource("VisualShaderNodeVectorOp_mmp38")
-nodes/fragment/20/position = Vector2(-400, 180)
+nodes/fragment/20/position = Vector2(-820, 140)
 nodes/fragment/21/node = SubResource("VisualShaderNodeTexture2DParameter_yiyd8")
-nodes/fragment/21/position = Vector2(-1000, -60)
+nodes/fragment/21/position = Vector2(-1420, -100)
 nodes/fragment/22/node = SubResource("VisualShaderNodeTexture_6xcdl")
-nodes/fragment/22/position = Vector2(-680, 80)
+nodes/fragment/22/position = Vector2(-1100, 40)
 nodes/fragment/connections = PackedInt32Array(18, 0, 20, 1, 21, 0, 22, 2, 22, 0, 20, 0, 20, 0, 0, 0)
 nodes/light/0/position = Vector2(780, 560)
 nodes/light/2/node = SubResource("VisualShaderNodeDotProduct_r1r52")
@@ -340,10 +324,6 @@ nodes/light/16/node = SubResource("VisualShaderNodeInput_7ck6c")
 nodes/light/16/position = Vector2(-240, 580)
 nodes/light/17/node = SubResource("VisualShaderNodeVectorOp_431to")
 nodes/light/17/position = Vector2(140, 300)
-nodes/light/19/node = SubResource("VisualShaderNodeTransformVecMult_2iv50")
-nodes/light/19/position = Vector2(-2820, -260)
-nodes/light/20/node = SubResource("VisualShaderNodeInput_tj7ed")
-nodes/light/20/position = Vector2(-3080, -260)
 nodes/light/21/node = SubResource("VisualShaderNodeVectorFunc_58lwk")
 nodes/light/21/position = Vector2(-85.2434, 123.083)
 nodes/light/22/node = SubResource("VisualShaderNodeInput_lsw1g")
@@ -372,12 +352,12 @@ nodes/light/34/node = SubResource("VisualShaderNodeVectorOp_2iv50")
 nodes/light/34/position = Vector2(480, 740)
 nodes/light/35/node = SubResource("VisualShaderNodeVectorFunc_r1r52")
 nodes/light/35/position = Vector2(-1082.53, 1125.38)
-nodes/light/36/node = SubResource("VisualShaderNodeVectorFunc_tj7ed")
-nodes/light/36/position = Vector2(-2560, -240)
 nodes/light/37/node = SubResource("VisualShaderNodeInput_06cu1")
 nodes/light/37/position = Vector2(-1100, -400)
 nodes/light/38/node = SubResource("VisualShaderNodeStep_46x1o")
 nodes/light/38/position = Vector2(-760, -400)
 nodes/light/39/node = SubResource("VisualShaderNodeFloatOp_fq6qa")
 nodes/light/39/position = Vector2(-500, -220)
-nodes/light/connections = PackedInt32Array(3, 0, 2, 0, 8, 0, 5, 0, 6, 0, 5, 1, 6, 0, 11, 1, 5, 0, 7, 0, 7, 0, 11, 0, 2, 0, 9, 0, 15, 0, 12, 1, 11, 0, 13, 0, 16, 0, 17, 1, 20, 0, 19, 0, 12, 0, 21, 0, 21, 0, 17, 0, 22, 0, 23, 1, 25, 0, 24, 0, 27, 0, 26, 1, 26, 0, 23, 0, 23, 0, 28, 0, 30, 0, 26, 0, 28, 0, 32, 0, 32, 0, 31, 1, 33, 0, 31, 0, 31, 0, 34, 1, 16, 0, 34, 0, 24, 0, 35, 0, 35, 0, 30, 0, 19, 0, 36, 0, 36, 0, 2, 1, 37, 0, 38, 1, 13, 0, 39, 1, 39, 0, 12, 0, 17, 0, 0, 0, 34, 0, 0, 1, 37, 0, 39, 0, 9, 0, 8, 0)
+nodes/light/42/node = SubResource("VisualShaderNodeInput_7hw4e")
+nodes/light/42/position = Vector2(-2880, 880)
+nodes/light/connections = PackedInt32Array(3, 0, 2, 0, 8, 0, 5, 0, 6, 0, 5, 1, 6, 0, 11, 1, 5, 0, 7, 0, 7, 0, 11, 0, 2, 0, 9, 0, 15, 0, 12, 1, 11, 0, 13, 0, 16, 0, 17, 1, 12, 0, 21, 0, 21, 0, 17, 0, 22, 0, 23, 1, 25, 0, 24, 0, 27, 0, 26, 1, 26, 0, 23, 0, 23, 0, 28, 0, 30, 0, 26, 0, 28, 0, 32, 0, 32, 0, 31, 1, 33, 0, 31, 0, 31, 0, 34, 1, 16, 0, 34, 0, 24, 0, 35, 0, 35, 0, 30, 0, 37, 0, 38, 1, 13, 0, 39, 1, 39, 0, 12, 0, 17, 0, 0, 0, 34, 0, 0, 1, 37, 0, 39, 0, 9, 0, 8, 0, 42, 0, 2, 1, 42, 0, 24, 1)
