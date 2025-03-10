@@ -34,13 +34,18 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"TreeBottom": {
+"TreeBottom.003": {
 "use_external/enabled": true,
 "use_external/path": "uid://c51aq2phix4xo"
 },
-"TreeTop": {
+"TreeTop.003": {
 "use_external/enabled": true,
 "use_external/path": "uid://4ttr2x5rbcgv"
+}
+},
+"nodes": {
+"PATH:Baum2": {
+"generate/physics": true
 }
 }
 }

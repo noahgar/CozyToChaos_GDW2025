@@ -42,6 +42,11 @@ _subresources={
 "use_external/enabled": true,
 "use_external/path": "uid://4ttr2x5rbcgv"
 }
+},
+"nodes": {
+"PATH:Baum1": {
+"generate/physics": true
+}
 }
 }
 fbx/importer=0
