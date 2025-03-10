@@ -10,6 +10,6 @@ config_version=5
 
 [application]
 
-config/name="Test"
+config/name="CozyToChaos"
 run/main_scene="uid://xk4lapgrk5i3"
 config/features=PackedStringArray("4.4", "GL Compatibility")
