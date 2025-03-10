@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://dtke7a5iy4yeo"]
+
+[ext_resource type="PackedScene" uid="uid://dba67f8ki2hme" path="res://Models/Blockout/ConceptArt.fbx" id="1_qt6kk"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_qt6kk"]
+radius = 1.08496
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_qt6kk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dlaeo"]
+size = Vector3(19.9587, 1.6864, 0.56897)
+
+[node name="ConceptArt" instance=ExtResource("1_qt6kk")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube_002" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_002/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.263868, 0, -0.035738)
+shape = SubResource("CylinderShape3D_qt6kk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube_003" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_003/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.263868, 0, -0.035738)
+shape = SubResource("CylinderShape3D_qt6kk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube_004" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_004/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.263868, 0, -0.035738)
+shape = SubResource("CylinderShape3D_qt6kk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube_005" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_005/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.263868, 0, -0.035738)
+shape = SubResource("CylinderShape3D_qt6kk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cube_006" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cube_006/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.263868, 0, -0.035738)
+shape = SubResource("CylinderShape3D_qt6kk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0866227, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+shape = SubResource("WorldBoundaryShape3D_qt6kk")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0878754, 0.343201, 6.02788)
+shape = SubResource("BoxShape3D_dlaeo")
