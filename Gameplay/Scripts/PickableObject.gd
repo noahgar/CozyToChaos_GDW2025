@@ -1,11 +1,16 @@
-class_name PickableObject extends RigidBody3D
+class_name PickableObject extends Node3D
 
 var defaultLocation:Vector3
 var startingTransform:Transform3D
 var isPickedUp:bool
 
 func _ready() -> void:
-	self.input_event.connect(_on_input_event)
+	var BaseRigidBody:RigidBody3D
+	for child in get_children():
+		if child is RigidBody3D:
+			BaseRigidBody = child
+	if BaseRigidBody:
+		BaseRigidBody.input_event.connect(_on_input_event)
 	startingTransform = self.global_transform
 	
 func _on_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
