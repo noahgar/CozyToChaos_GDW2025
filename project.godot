@@ -16,4 +16,6 @@ config/features=PackedStringArray("4.4", "GL Compatibility")
 
 [rendering]
 
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
 2d/rendering_method="forward_plus"
