@@ -45,7 +45,8 @@ _subresources={
 },
 "nodes": {
 "PATH:Baum1": {
-"generate/physics": true
+"generate/physics": true,
+"physics/body_type": 1
 }
 }
 }
