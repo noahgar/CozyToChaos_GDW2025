@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://cwrsvg8ehieuw"]
+
+[ext_resource type="Shader" uid="uid://dyc7gatjwbjcw" path="res://Shader/ToonShader.tres" id="1_rlapd"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_rlapd")
+shader_parameter/Albedo = Color(0.21943, 0.199523, 0.238735, 1)
+shader_parameter/AmbientColor = Color(0.370428, 0.218784, 0.259922, 1)
+shader_parameter/SpecularSize = 1.0

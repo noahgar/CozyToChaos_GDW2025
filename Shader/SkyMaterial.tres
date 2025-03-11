@@ -4,3 +4,5 @@
 
 [resource]
 shader = ExtResource("1_lbtne")
+shader_parameter/skyColor = Color(0.246585, 0.492311, 0.829326, 1)
+shader_parameter/horizonColor = Color(0.664002, 0.741488, 0.876735, 1)

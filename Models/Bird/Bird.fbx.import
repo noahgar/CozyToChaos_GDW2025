@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ceybygcrggcjj"
-path="res://.godot/imported/Bird.fbx-5a321fd8ffa579462c284a79cd9c7942.scn"
+path="res://.godot/imported/Bird.fbx-03b810295731a7392204fd5068d2bc51.scn"
 
 [deps]
 
-source_file="res://Models/Blockout/Bird/Bird.fbx"
-dest_files=["res://.godot/imported/Bird.fbx-5a321fd8ffa579462c284a79cd9c7942.scn"]
+source_file="res://Models/Bird/Bird.fbx"
+dest_files=["res://.godot/imported/Bird.fbx-03b810295731a7392204fd5068d2bc51.scn"]
 
 [params]
 
@@ -32,7 +32,26 @@ animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={}
+_subresources={
+"materials": {
+"Body": {
+"use_external/enabled": true,
+"use_external/path": "uid://cox1eufsjrbre"
+},
+"Feet": {
+"use_external/enabled": true,
+"use_external/path": "uid://7jtl78747e5e"
+},
+"Hat": {
+"use_external/enabled": true,
+"use_external/path": "uid://dou4kogdw1vo7"
+},
+"Mark": {
+"use_external/enabled": true,
+"use_external/path": "uid://deos85367w2oi"
+}
+}
+}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1

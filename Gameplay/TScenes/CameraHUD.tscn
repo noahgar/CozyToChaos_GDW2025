@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://ddhdulhfelkqg"]
 
-[ext_resource type="Script" path="res://Gameplay/Scripts/CameraRotation.gd" id="1_carwu"]
+[ext_resource type="Script" uid="uid://dqxhjx4yxgxhk" path="res://Gameplay/Scripts/CameraRotation.gd" id="1_carwu"]
 [ext_resource type="PackedScene" uid="uid://bbdnlj8afwdck" path="res://Gameplay/TScenes/bird.tscn" id="2_0x035"]
-[ext_resource type="Script" path="res://Gameplay/Scripts/Inventory.gd" id="3_eg66j"]
+[ext_resource type="Script" uid="uid://dcsbie22um5l3" path="res://Gameplay/Scripts/Inventory.gd" id="3_eg66j"]
 
 [node name="CameraHUD" type="Node3D"]
 transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)

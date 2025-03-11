@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://4aew84ouqans"]
 
-[ext_resource type="Script" path="res://Gameplay/Scripts/CameraRotation.gd" id="1_f3skb"]
+[ext_resource type="Script" uid="uid://dqxhjx4yxgxhk" path="res://Gameplay/Scripts/CameraRotation.gd" id="1_f3skb"]
 [ext_resource type="PackedScene" uid="uid://bbdnlj8afwdck" path="res://Gameplay/TScenes/bird.tscn" id="2_7y3xc"]
 [ext_resource type="Script" uid="uid://dcsbie22um5l3" path="res://Gameplay/Scripts/Inventory.gd" id="3_helqs"]
 

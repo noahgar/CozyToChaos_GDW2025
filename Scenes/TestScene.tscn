@@ -1,15 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://xk4lapgrk5i3"]
+[gd_scene load_steps=5 format=3 uid="uid://xk4lapgrk5i3"]
 
-[ext_resource type="Texture2D" uid="uid://b3yvsclhgwl7c" path="res://Textures/sky_19_2k.png" id="1_5lt6y"]
-[ext_resource type="Material" uid="uid://cay5ofwxqnnrg" path="res://Models/Blockout/Materials/Concrete.tres" id="3_8k7wh"]
-[ext_resource type="PackedScene" uid="uid://dtke7a5iy4yeo" path="res://Models/Blockout/concept_art.tscn" id="3_iufkg"]
-[ext_resource type="Material" uid="uid://cypk8pvmmvupr" path="res://Models/Blockout/Materials/Fence.tres" id="4_iufkg"]
-
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_wicfy"]
-panorama = ExtResource("1_5lt6y")
+[ext_resource type="Material" uid="uid://cda11bgeepjej" path="res://Shader/SkyMaterial.tres" id="1_qsjrb"]
+[ext_resource type="PackedScene" uid="uid://rjb0be0bwwac" path="res://Models/Blockout/GardenBase/Garden_001.tscn" id="2_5lt6y"]
 
 [sub_resource type="Sky" id="Sky_iufkg"]
-sky_material = SubResource("PanoramaSkyMaterial_wicfy")
+sky_material = ExtResource("1_qsjrb")
 radiance_size = 6
 
 [sub_resource type="Environment" id="Environment_wicfy"]
@@ -31,23 +26,11 @@ fog_light_color = Color(0.646506, 0.677743, 0.726825, 1)
 fog_light_energy = 0.89
 fog_density = 0.0127
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_iufkg"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_0f5h7"]
-
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_iufkg"]
-rough = true
-bounce = 0.55
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_0f5h7"]
-
-[sub_resource type="SphereMesh" id="SphereMesh_qsjrb"]
-
 [node name="SceneRoot" type="Node3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.162775, -0.582755, 0.796179, -0.567699, 0.604674, 0.558648, -0.806983, -0.542924, -0.232404, 10.582, 2.46004, 13.5126)
-light_color = Color(0.992519, 0.883306, 0.828379, 1)
+light_color = Color(0.906356, 0.704623, 0.530089, 1)
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -57,45 +40,4 @@ environment = SubResource("Environment_wicfy")
 transform = Transform3D(-4.37114e-08, -0.345298, 0.938493, 0, 0.938493, 0.345298, -1, 1.50935e-08, -4.10228e-08, 21.53, 8.176, 3.657)
 fov = 40.5
 
-[node name="RigidBody3D" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.45801, 11.8474)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-shape = SubResource("BoxShape3D_iufkg")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
-material_override = ExtResource("3_8k7wh")
-mesh = SubResource("BoxMesh_0f5h7")
-
-[node name="ConceptArt2" parent="." instance=ExtResource("3_iufkg")]
-
-[node name="RigidBody3D3" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.13005, -0.139167)
-physics_material_override = SubResource("PhysicsMaterial_iufkg")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D3"]
-shape = SubResource("SphereShape3D_0f5h7")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D3"]
-material_override = ExtResource("4_iufkg")
-mesh = SubResource("SphereMesh_qsjrb")
-
-[node name="RigidBody3D4" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.57858, 0.171143)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D4"]
-shape = SubResource("SphereShape3D_0f5h7")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D4"]
-material_override = ExtResource("4_iufkg")
-mesh = SubResource("SphereMesh_qsjrb")
-
-[node name="RigidBody3D2" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.13658, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D2"]
-shape = SubResource("SphereShape3D_0f5h7")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D2"]
-material_override = ExtResource("4_iufkg")
-mesh = SubResource("SphereMesh_qsjrb")
+[node name="Garden001" parent="." instance=ExtResource("2_5lt6y")]

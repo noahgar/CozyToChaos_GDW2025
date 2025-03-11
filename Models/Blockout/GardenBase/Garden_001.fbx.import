@@ -32,7 +32,54 @@ animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={}
+_subresources={
+"materials": {
+"Balkon und Sims": {
+"use_external/enabled": true,
+"use_external/path": "uid://byuiqsfbdr561"
+},
+"Dach": {
+"use_external/enabled": true,
+"use_external/path": "uid://b341vn1olacul"
+},
+"Fenster": {
+"use_external/enabled": true,
+"use_external/path": "uid://c37p6yb54la5u"
+},
+"Fensterrahmen": {
+"use_external/enabled": true,
+"use_external/path": "uid://dnwr4ujenleli"
+},
+"Grass": {
+"use_external/enabled": true,
+"use_external/path": "uid://cbhe4s815dk70"
+},
+"Hauswand": {
+"use_external/enabled": true,
+"use_external/path": "uid://dw75n0awaclva"
+},
+"Path": {
+"use_external/enabled": true,
+"use_external/path": "uid://bnchxgc5i3i57"
+},
+"Street Path": {
+"use_external/enabled": true,
+"use_external/path": "uid://cwrsvg8ehieuw"
+},
+"Streifen": {
+"use_external/enabled": true,
+"use_external/path": "uid://dldwvxxwaivd7"
+},
+"Tür": {
+"use_external/enabled": true,
+"use_external/path": "uid://2pjdh2x5onat"
+},
+"Umrandung": {
+"use_external/enabled": true,
+"use_external/path": "uid://bbh2dc6mlmasq"
+}
+}
+}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1
