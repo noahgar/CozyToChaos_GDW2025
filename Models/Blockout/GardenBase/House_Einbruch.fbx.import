@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cg882woyxeur7"
-path="res://.godot/imported/Haus_02.fbx-6df83de9c718215863c5b7d7a4ab00f5.scn"
+uid="uid://dmmj2o16nnws6"
+path="res://.godot/imported/House_Einbruch.fbx-69a48dbc74fa00f75897e29a5d1a194d.scn"
 
 [deps]
 
-source_file="res://Models/Blockout/GardenBase/Haus_02.fbx"
-dest_files=["res://.godot/imported/Haus_02.fbx-6df83de9c718215863c5b7d7a4ab00f5.scn"]
+source_file="res://Models/Blockout/GardenBase/House_Einbruch.fbx"
+dest_files=["res://.godot/imported/House_Einbruch.fbx-69a48dbc74fa00f75897e29a5d1a194d.scn"]
 
 [params]
 
@@ -36,23 +36,11 @@ _subresources={
 "materials": {
 "Dach": {
 "use_external/enabled": true,
-"use_external/path": "uid://yrqmr2srbmi8"
-},
-"Fensterrahmen": {
-"use_external/enabled": true,
-"use_external/path": "uid://cixypylk4vbws"
+"use_external/path": "uid://b341vn1olacul"
 },
 "Hauswand": {
 "use_external/enabled": true,
 "use_external/path": "uid://dw75n0awaclva"
-},
-"Streifen": {
-"use_external/enabled": true,
-"use_external/path": "uid://cixypylk4vbws"
-},
-"Tür": {
-"use_external/enabled": true,
-"use_external/path": "uid://cixypylk4vbws"
 }
 }
 }

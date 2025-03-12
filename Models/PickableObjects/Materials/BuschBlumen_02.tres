@@ -6,5 +6,3 @@
 render_priority = 0
 shader = ExtResource("1_vhps0")
 shader_parameter/Albedo = Color(0.758328, 0.453661, 0.135392, 1)
-shader_parameter/AmbientColor = Color(0.383475, 0.545508, 0.814996, 1)
-shader_parameter/SpecularSize = 1.0
