@@ -1,5 +1,9 @@
 extends Node3D
 
+#TimeOfDay sollte ein wert zwischen 0-1 sein. Für die Rotation der Sonne bin ich mir nicht sicher, vielleicht einfach gar nicht rotieren?
+#timeOfDay = 0 -> Nacht, timeOfDay = 0.5 -> Tag, timeOfDay = 1 -> Nacht
+@export_range(0, 1) var timeOfDay:float
+
 @export_category("Sun")
 @export var directionalLight:DirectionalLight3D
 @export var sunColor:Gradient
@@ -19,15 +23,12 @@ var envMat
 @export_range(0, 1) var rain:float
 @export var windVFX:GPUParticles3D
 @export_range(0, 1) var wind:float
-#TimeOfDay sollte ein wert zwischen 0-1 sein. Für die Rotation der Sonne bin ich mir nicht sicher, vielleicht einfach gar nicht rotieren?
-#timeOfDay = 0 -> Nacht, timeOfDay = 0.5 -> Tag, timeOfDay = 1 -> Nacht
-var timeOfDay:float
+
 
 func _ready() -> void:
 	envMat = worldEnvironment.environment.sky.sky_material
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	timeOfDay += delta * 0.03
 	timeOfDay = fmod(timeOfDay, 1.0)
 	
 	if directionalLight != null:
