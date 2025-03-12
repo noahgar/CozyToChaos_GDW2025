@@ -29,7 +29,7 @@ func _ready() -> void:
 	envMat = worldEnvironment.environment.sky.sky_material
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	timeOfDay = fmod(timeOfDay, 1.0)
+	timeOfDay = clamp(timeOfDay, 0, 1)
 	
 	if directionalLight != null:
 		var currentSun = lerp(sunColor.sample(timeOfDay), rainySunColor.sample(timeOfDay), rain)
