@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dq1jblo2yaqvq"
-path="res://.godot/imported/Laptop.fbx-37a8561e1db8cdab0a9cc0395f0bedd0.scn"
+uid="uid://dthgal1wm4fws"
+path="res://.godot/imported/SM_Gartentoor.fbx-4b9b82b4ee922aecfdb384f4fe832dd3.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Laptop.fbx"
-dest_files=["res://.godot/imported/Laptop.fbx-37a8561e1db8cdab0a9cc0395f0bedd0.scn"]
+source_file="res://Models/Blockout/GardenBase/SM_Gartentoor.fbx"
+dest_files=["res://.godot/imported/SM_Gartentoor.fbx-4b9b82b4ee922aecfdb384f4fe832dd3.scn"]
 
 [params]
 
@@ -34,13 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Material.002": {
+"Material.001": {
 "use_external/enabled": true,
-"use_external/path": "uid://cixypylk4vbws"
+"use_external/path": "uid://bqgyg1uy6dp4c"
 },
-"Material.004": {
+"Material.008": {
 "use_external/enabled": true,
-"use_external/path": "uid://d0in3oyanloh7"
+"use_external/path": "uid://bqgyg1uy6dp4c"
 }
 }
 }

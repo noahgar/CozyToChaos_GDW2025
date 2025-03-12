@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://rjb0be0bwwac"]
+[gd_scene load_steps=3 format=3 uid="uid://rjb0be0bwwac"]
 
 [ext_resource type="PackedScene" uid="uid://7i5rowxrixqq" path="res://Models/Blockout/GardenBase/Garden_001.fbx" id="1_nlbia"]
+[ext_resource type="PackedScene" uid="uid://cxs4hwducr5bp" path="res://Models/Blockout/GardenBase/Garten.fbx" id="2_26o2g"]
 
 [node name="Garden001" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00269032, -0.0264671, 0.00946903)
 
 [node name="Garden_001" parent="." instance=ExtResource("1_nlbia")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.427346, 0, -2.27404)
+visible = false
+
+[node name="Garten" parent="." instance=ExtResource("2_26o2g")]
+transform = Transform3D(0.105655, 0, 0, 0, 0.105655, 0, 0, 0, 0.105655, 0.046618, 0.0794542, -1.80877)

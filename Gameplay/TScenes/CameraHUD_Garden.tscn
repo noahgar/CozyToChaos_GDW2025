@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://dcsbie22um5l3" path="res://Gameplay/Scripts/Inventory.gd" id="3_helqs"]
 
 [node name="CameraHUD" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("1_f3skb")
 
 [node name="Pivot" type="Node3D" parent="."]

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dq1jblo2yaqvq"
-path="res://.godot/imported/Laptop.fbx-37a8561e1db8cdab0a9cc0395f0bedd0.scn"
+uid="uid://rmdywkanotlh"
+path="res://.godot/imported/SM_Modular_Zaun.fbx-0cad99bc3596247b3f039b019b2ebab7.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Laptop.fbx"
-dest_files=["res://.godot/imported/Laptop.fbx-37a8561e1db8cdab0a9cc0395f0bedd0.scn"]
+source_file="res://Models/Blockout/GardenBase/SM_Modular_Zaun.fbx"
+dest_files=["res://.godot/imported/SM_Modular_Zaun.fbx-0cad99bc3596247b3f039b019b2ebab7.scn"]
 
 [params]
 
@@ -34,13 +34,9 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Material.002": {
+"Material.008": {
 "use_external/enabled": true,
-"use_external/path": "uid://cixypylk4vbws"
-},
-"Material.004": {
-"use_external/enabled": true,
-"use_external/path": "uid://d0in3oyanloh7"
+"use_external/path": "uid://bqgyg1uy6dp4c"
 }
 }
 }

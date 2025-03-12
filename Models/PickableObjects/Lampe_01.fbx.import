@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dq1jblo2yaqvq"
-path="res://.godot/imported/Laptop.fbx-37a8561e1db8cdab0a9cc0395f0bedd0.scn"
+uid="uid://dcq4dvjk26qhi"
+path="res://.godot/imported/Lampe_01.fbx-d6304175e40a51356fd5024b75f11f18.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Laptop.fbx"
-dest_files=["res://.godot/imported/Laptop.fbx-37a8561e1db8cdab0a9cc0395f0bedd0.scn"]
+source_file="res://Models/PickableObjects/Lampe_01.fbx"
+dest_files=["res://.godot/imported/Lampe_01.fbx-d6304175e40a51356fd5024b75f11f18.scn"]
 
 [params]
 
@@ -32,18 +32,7 @@ animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={
-"materials": {
-"Material.002": {
-"use_external/enabled": true,
-"use_external/path": "uid://cixypylk4vbws"
-},
-"Material.004": {
-"use_external/enabled": true,
-"use_external/path": "uid://d0in3oyanloh7"
-}
-}
-}
+_subresources={}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dq1jblo2yaqvq"
-path="res://.godot/imported/Laptop.fbx-37a8561e1db8cdab0a9cc0395f0bedd0.scn"
+uid="uid://bkkfn1qys1iar"
+path="res://.godot/imported/SM_Vogelhaus.fbx-b044e8a2dd38dc15f8f5ac8ee9fb3041.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Laptop.fbx"
-dest_files=["res://.godot/imported/Laptop.fbx-37a8561e1db8cdab0a9cc0395f0bedd0.scn"]
+source_file="res://Models/PickableObjects/SM_Vogelhaus.fbx"
+dest_files=["res://.godot/imported/SM_Vogelhaus.fbx-b044e8a2dd38dc15f8f5ac8ee9fb3041.scn"]
 
 [params]
 
@@ -34,13 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Material.002": {
+"Material.003": {
 "use_external/enabled": true,
-"use_external/path": "uid://cixypylk4vbws"
+"use_external/path": "uid://4ttr2x5rbcgv"
 },
-"Material.004": {
+"Material.008": {
 "use_external/enabled": true,
-"use_external/path": "uid://d0in3oyanloh7"
+"use_external/path": "uid://c51aq2phix4xo"
 }
 }
 }

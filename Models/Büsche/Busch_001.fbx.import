@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dq1jblo2yaqvq"
-path="res://.godot/imported/Laptop.fbx-37a8561e1db8cdab0a9cc0395f0bedd0.scn"
+uid="uid://cb1jn8lq2jrtl"
+path="res://.godot/imported/Busch_001.fbx-8be354fac84c70b863fa72ed6565e7bb.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Laptop.fbx"
-dest_files=["res://.godot/imported/Laptop.fbx-37a8561e1db8cdab0a9cc0395f0bedd0.scn"]
+source_file="res://Models/Büsche/Busch_001.fbx"
+dest_files=["res://.godot/imported/Busch_001.fbx-8be354fac84c70b863fa72ed6565e7bb.scn"]
 
 [params]
 
@@ -34,13 +34,9 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Material.002": {
+"Material.001": {
 "use_external/enabled": true,
-"use_external/path": "uid://cixypylk4vbws"
-},
-"Material.004": {
-"use_external/enabled": true,
-"use_external/path": "uid://d0in3oyanloh7"
+"use_external/path": "uid://51u0j3pux14f"
 }
 }
 }

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dq1jblo2yaqvq"
-path="res://.godot/imported/Laptop.fbx-37a8561e1db8cdab0a9cc0395f0bedd0.scn"
+uid="uid://ce2x7s70nlnf7"
+path="res://.godot/imported/Auto_gelb.fbx-bbca4d552ee5c41dae7d15a5ee30ef67.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Laptop.fbx"
-dest_files=["res://.godot/imported/Laptop.fbx-37a8561e1db8cdab0a9cc0395f0bedd0.scn"]
+source_file="res://Models/PickableObjects/Auto_gelb.fbx"
+dest_files=["res://.godot/imported/Auto_gelb.fbx-bbca4d552ee5c41dae7d15a5ee30ef67.scn"]
 
 [params]
 
@@ -34,13 +34,21 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Material.002": {
+"AutoFenster": {
+"use_external/enabled": true,
+"use_external/path": "uid://jjin20a0fbwg"
+},
+"AutoRot": {
+"use_external/enabled": true,
+"use_external/path": "uid://dffsftknomd5s"
+},
+"AutoSchwarz": {
 "use_external/enabled": true,
 "use_external/path": "uid://cixypylk4vbws"
 },
-"Material.004": {
+"AutoWeiss": {
 "use_external/enabled": true,
-"use_external/path": "uid://d0in3oyanloh7"
+"use_external/path": "uid://cc1hudebxpv7q"
 }
 }
 }

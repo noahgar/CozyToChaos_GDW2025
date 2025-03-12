@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c7c60kcjik5gp"
-path="res://.godot/imported/StehLampe.fbx-ba3c856ece96b2eea30830fc32fab810.scn"
+uid="uid://bt1fots0vwxso"
+path="res://.godot/imported/Auto_blau.fbx-6f0c044e3103add3201d355b3b150b42.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/StehLampe.fbx"
-dest_files=["res://.godot/imported/StehLampe.fbx-ba3c856ece96b2eea30830fc32fab810.scn"]
+source_file="res://Models/PickableObjects/Auto_blau.fbx"
+dest_files=["res://.godot/imported/Auto_blau.fbx-6f0c044e3103add3201d355b3b150b42.scn"]
 
 [params]
 
@@ -34,9 +34,21 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Stehlampe": {
+"AutoFenster": {
 "use_external/enabled": true,
-"use_external/path": "uid://d0in3oyanloh7"
+"use_external/path": "uid://jjin20a0fbwg"
+},
+"AutoRot": {
+"use_external/enabled": true,
+"use_external/path": "uid://blibdseksbolg"
+},
+"AutoSchwarz": {
+"use_external/enabled": true,
+"use_external/path": "uid://cixypylk4vbws"
+},
+"AutoWeiss": {
+"use_external/enabled": true,
+"use_external/path": "uid://cc1hudebxpv7q"
 }
 }
 }
