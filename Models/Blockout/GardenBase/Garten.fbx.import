@@ -37,6 +37,18 @@ _subresources={
 "Grass": {
 "use_external/enabled": true,
 "use_external/path": "uid://cbhe4s815dk70"
+},
+"Path": {
+"use_external/enabled": true,
+"use_external/path": "uid://bnchxgc5i3i57"
+},
+"Street Path": {
+"use_external/enabled": true,
+"use_external/path": "uid://cwrsvg8ehieuw"
+},
+"Umrandung": {
+"use_external/enabled": true,
+"use_external/path": "uid://bbh2dc6mlmasq"
 }
 },
 "nodes": {

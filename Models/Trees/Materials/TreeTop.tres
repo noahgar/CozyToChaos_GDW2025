@@ -6,5 +6,3 @@
 render_priority = 0
 shader = ExtResource("1_gvwq4")
 shader_parameter/Albedo = Color(0.288356, 0.475759, 0.248168, 1)
-shader_parameter/AmbientColor = Color(0.326654, 0.547313, 0.994161, 1)
-shader_parameter/SpecularSize = 1.0

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dumqp8e6qran"
-path="res://.godot/imported/Lampe_New.fbx-cf463748af7b88fbe591dda3fd443663.scn"
+uid="uid://bvslyo7i4q746"
+path="res://.godot/imported/Schirm.fbx-8360873e83a1716033db1bfa600d9166.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Lampe_New.fbx"
-dest_files=["res://.godot/imported/Lampe_New.fbx-cf463748af7b88fbe591dda3fd443663.scn"]
+source_file="res://Models/PickableObjects/Schirm.fbx"
+dest_files=["res://.godot/imported/Schirm.fbx-8360873e83a1716033db1bfa600d9166.scn"]
 
 [params]
 
@@ -34,13 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Material.004": {
-"use_external/enabled": true,
-"use_external/path": "uid://b3n8lyipabtd7"
-},
-"Material.005": {
+"Schirm A": {
 "use_external/enabled": true,
 "use_external/path": "uid://dfwjs0qpgdo84"
+},
+"Schirm B": {
+"use_external/enabled": true,
+"use_external/path": "uid://cbwsrmpxmn48c"
 }
 }
 }

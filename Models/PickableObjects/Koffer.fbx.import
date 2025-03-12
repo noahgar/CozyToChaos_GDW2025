@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dumqp8e6qran"
-path="res://.godot/imported/Lampe_New.fbx-cf463748af7b88fbe591dda3fd443663.scn"
+uid="uid://ct6dqssjxn31p"
+path="res://.godot/imported/Koffer.fbx-48507e0562c5b8e3644474964f9ffddc.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Lampe_New.fbx"
-dest_files=["res://.godot/imported/Lampe_New.fbx-cf463748af7b88fbe591dda3fd443663.scn"]
+source_file="res://Models/PickableObjects/Koffer.fbx"
+dest_files=["res://.godot/imported/Koffer.fbx-48507e0562c5b8e3644474964f9ffddc.scn"]
 
 [params]
 
@@ -34,13 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Material.004": {
+"Kofferfarbe": {
 "use_external/enabled": true,
-"use_external/path": "uid://b3n8lyipabtd7"
+"use_external/path": "uid://bhss0dp4ni054"
 },
-"Material.005": {
+"Lederriemen": {
 "use_external/enabled": true,
-"use_external/path": "uid://dfwjs0qpgdo84"
+"use_external/path": "uid://uhb1qymj45v7"
 }
 }
 }

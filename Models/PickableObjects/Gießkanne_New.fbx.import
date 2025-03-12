@@ -33,11 +33,10 @@ animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
-"nodes": {
-"PATH:Gießkannenew": {
-"generate/physics": true,
-"physics/body_type": 1,
-"physics/shape_type": 1
+"materials": {
+"Material.015": {
+"use_external/enabled": true,
+"use_external/path": "uid://xns43nd65nqy"
 }
 }
 }
