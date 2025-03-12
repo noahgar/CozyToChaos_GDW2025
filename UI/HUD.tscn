@@ -1,0 +1,190 @@
+[gd_scene load_steps=15 format=3 uid="uid://cqd5knljw3e7d"]
+
+[ext_resource type="Script" uid="uid://0soigeh5nfq6" path="res://UI/hudScript.gd" id="1_yixhe"]
+[ext_resource type="Texture2D" uid="uid://djjqp43wdvrys" path="res://UI/GIFs/Night/Night-0.png" id="2_gppie"]
+[ext_resource type="Texture2D" uid="uid://paaaouejyhh" path="res://UI/GIFs/Night/Night-1.png" id="3_2ptjp"]
+[ext_resource type="Texture2D" uid="uid://chv625yiswx6d" path="res://UI/GIFs/Night/Night-2.png" id="4_md4fy"]
+[ext_resource type="Texture2D" uid="uid://o7oij283dqkp" path="res://UI/GIFs/Night/Night-3.png" id="5_7i7fj"]
+[ext_resource type="Texture2D" uid="uid://kllj4rwli00" path="res://UI/GIFs/Night/Night-4.png" id="6_rbci0"]
+[ext_resource type="Texture2D" uid="uid://bifyu12qelxtj" path="res://UI/GIFs/SunUp/SunUp-0.png" id="7_am7sw"]
+[ext_resource type="Texture2D" uid="uid://djaqxn0h1ogj" path="res://UI/GIFs/SunUp/SunUp-1.png" id="8_ixkb2"]
+[ext_resource type="Texture2D" uid="uid://dqgtse4i8co73" path="res://UI/GIFs/SunUp/SunUp-2.png" id="9_mms7u"]
+[ext_resource type="Texture2D" uid="uid://bj4kl1ywt3d4k" path="res://UI/GIFs/SunUp/SunUp-3.png" id="10_281ki"]
+[ext_resource type="Texture2D" uid="uid://cq2ur3thvqn6s" path="res://UI/GIFs/SunUp/SunUp-4.png" id="11_w37wn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_am7sw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gppie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2ptjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_md4fy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7i7fj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rbci0")
+}],
+"loop": false,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kg6a8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_am7sw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ixkb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mms7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_281ki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_w37wn")
+}],
+"loop": false,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ixkb2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_w37wn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_281ki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mms7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ixkb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_am7sw")
+}],
+"loop": false,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Hud" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_yixhe")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.303
+anchor_top = 0.159
+anchor_right = 0.303
+anchor_bottom = 0.159
+offset_left = -191.056
+offset_top = 51.968
+offset_right = 234.944
+offset_bottom = 74.968
+mouse_filter = 2
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/normal_font_size = 24
+text = "Info Text"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Night" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -0.296082
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="Night"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="Night/CenterContainer"]
+layout_mode = 2
+
+[node name="Night" type="AnimatedSprite2D" parent="Night/CenterContainer/Control"]
+texture_filter = 1
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_am7sw")
+
+[node name="SunUp" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -0.296082
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="SunUp"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="SunUp/CenterContainer"]
+layout_mode = 2
+
+[node name="SunUp" type="AnimatedSprite2D" parent="SunUp/CenterContainer/Control"]
+texture_filter = 1
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_kg6a8")
+frame = 3
+frame_progress = 0.1376
+
+[node name="SunDown" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -0.296082
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="SunDown"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="SunDown/CenterContainer"]
+layout_mode = 2
+
+[node name="SunDown" type="AnimatedSprite2D" parent="SunDown/CenterContainer/Control"]
+texture_filter = 1
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_ixkb2")
+flip_h = true

@@ -12,16 +12,28 @@ func _ready() -> void:
 			BaseRigidBody = child
 	if BaseRigidBody:
 		BaseRigidBody.input_event.connect(_on_input_event)
+		BaseRigidBody.mouse_entered.connect(_on_mouse_entered)
+		BaseRigidBody.mouse_exited.connect(_on_mouse_exited)
 		BaseRigidBody.freeze = true
 	
 	startingTransform = self.global_transform
 	startingParent = self.get_parent_node_3d()
+
+func _on_mouse_entered() -> void:
+	var root:RootSceneScript = get_tree().root.get_child(0)
+	root.hudScript.addToHoveredArray(self)
 	
+func _on_mouse_exited() -> void:
+	var root:RootSceneScript = get_tree().root.get_child(0)
+	root.hudScript.removeFromHoveredArray(self)
+
 func _on_input_event(_camera: Node, event: InputEvent, event_position: Vector3, _normal: Vector3, _shape_idx: int) -> void:
+	var root:RootSceneScript = get_tree().root.get_child(0)
+	
 	if !isPickedUp:
 		if event is InputEventMouseButton:
 			if event.button_mask&(MOUSE_BUTTON_MASK_LEFT):
-				var root:RootSceneScript = get_tree().root.get_child(0)
+				root.hudScript.removeFromHoveredArray(self)
 				if root.birdInventory.CurrentlyHolding:
 					if root.isOutside:
 						root.birdInventory.putObjectBack()

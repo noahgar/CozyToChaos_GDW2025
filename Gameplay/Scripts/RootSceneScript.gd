@@ -4,6 +4,7 @@ var birdInventory:inventory
 var camera:cameraRotation
 var BirdHouse:birdHouseScript
 var Garden:gardenScript
+var hudScript:HudScript
 var isOutside:bool
 var currentDay:int = 1
 var currentStep:int = 0
@@ -13,6 +14,7 @@ func _ready() -> void:
 	BirdHouse = $BirdHouse
 	birdInventory = $CameraHUD/Pivot/Bird
 	camera = $CameraHUD
+	hudScript = $Hud
 	Garden.visible = false
 	BirdHouse.visible = true
 	isOutside = false
@@ -36,16 +38,15 @@ func proceedToStep(step:int):
 	currentStep = step
 	match step:
 		0: #morning (house)
-			BirdHouse.activateDoor(true)
+			pass
 		1: #day (garden)
-			BirdHouse.activateDoor(false)
+			hudScript.playSunUpAnim()
 		2: #picked up object (garden)
-			Garden.activateDoor(true)
+			pass
 		3: #evening (house)
-			Garden.activateDoor(false)
-			BirdHouse.activateDoor(false)
+			hudScript.playSunDownAnim()
 		4: #placed object (house)
-			BirdHouse.makeBedReady(true)
+			pass
 		5: #night (sleeping transition)
-			BirdHouse.makeBedReady(false)
+			hudScript.playNightAnim()
 			proceedToStep(0)

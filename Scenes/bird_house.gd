@@ -16,7 +16,8 @@ func _ready() -> void:
 			bedStaticBody3D = child
 	if bedStaticBody3D:
 		bedStaticBody3D.input_event.connect(_on_input_event)
-		bedStaticBody3D.visible = false
+		bedStaticBody3D.mouse_entered.connect(_on_mouse_entered)
+		bedStaticBody3D.mouse_exited.connect(_on_mouse_exited)
 	
 	wallVisibilityBasedOnCamera(45)
 
@@ -24,15 +25,17 @@ func _on_input_event(_camera: Node, event: InputEvent, _event_position: Vector3,
 	if event is InputEventMouseButton:
 		if event.button_mask&(MOUSE_BUTTON_MASK_LEFT):
 			var root:RootSceneScript = get_tree().root.get_child(0)
-			root.proceedToStep(5)
+			root.hudScript.removeFromHoveredArray($BirdHouse_Bed)
+			if root.currentStep == 4:
+				root.proceedToStep(5)
 
-
-func activateDoor(active:bool):
-	doorStaticBody3D1.visible = active
-	doorStaticBody3D2.visible = active
-
-func makeBedReady(active:bool):
-	bedStaticBody3D.visible = active
+func _on_mouse_entered() -> void:
+	var root:RootSceneScript = get_tree().root.get_child(0)
+	root.hudScript.addToHoveredArray($BirdHouse_Bed)
+	
+func _on_mouse_exited() -> void:
+	var root:RootSceneScript = get_tree().root.get_child(0)
+	root.hudScript.removeFromHoveredArray($BirdHouse_Bed)
 
 
 func wallVisibilityBasedOnCamera(targetDegrees:float):
