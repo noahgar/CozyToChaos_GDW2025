@@ -19,6 +19,3 @@ near = 0.001
 [node name="Bird" parent="Pivot" instance=ExtResource("2_7y3xc")]
 transform = Transform3D(-5.62213, 0, -0.224039, -0.11202, 4.87278, 2.81106, 0.194023, 2.8133, -4.86891, 30.7995, -35.3389, 104.563)
 script = ExtResource("3_helqs")
-
-[node name="PickableObjectSlot" type="Node3D" parent="Pivot/Bird"]
-transform = Transform3D(-0.126188, -0.0143635, -0.124327, -0.125148, 0.016216, 0.125148, 0.00122962, 0.176402, -0.0216277, 5.95255, 0.742367, 12.1615)

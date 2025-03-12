@@ -3,3 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://ceybygcrggcjj" path="res://Models/Bird/Bird.fbx" id="1_g5k2s"]
 
 [node name="Bird" instance=ExtResource("1_g5k2s")]
+
+[node name="Skeleton3D" parent="Rig" index="0"]
+bones/3/rotation = Quaternion(-1.10359e-07, -3.20566e-08, -0.315158, 0.949039)
+bones/4/rotation = Quaternion(-2.64537e-08, 5.0971e-08, -0.0789864, 0.996876)
+
+[node name="PickableObjectSlot" type="Node3D" parent="." index="2"]
+transform = Transform3D(-0.126188, -0.0143635, -0.124327, -0.125148, 0.016216, 0.125148, 0.00122962, 0.176402, -0.0216277, 5.95255, 0.742367, 12.1615)
