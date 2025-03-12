@@ -46,6 +46,12 @@ _subresources={
 "use_external/enabled": true,
 "use_external/path": "uid://duqdfhu8ftd6r"
 }
+},
+"nodes": {
+"PATH:Apfel": {
+"generate/physics": true,
+"physics/body_type": 1
+}
 }
 }
 fbx/importer=0

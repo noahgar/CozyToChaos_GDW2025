@@ -1,4 +1,4 @@
-extends Node3D
+class_name cameraRotation extends Node3D
 
 var cameraTargetRotation:float = 45
 var currentRealRotation:float = 0
@@ -7,7 +7,6 @@ func _ready():
 	pass
 	
 func _input(event):
-	
 	if event is InputEventMouseButton:
 		if event.is_released():
 			currentRealRotation = 0
@@ -22,6 +21,11 @@ func _input(event):
 				currentRealRotation = 0
 				cameraTargetRotation -= 90
 
-
 func _process(delta):
 	self.rotation_degrees = self.rotation_degrees.lerp(Vector3(0,cameraTargetRotation+currentRealRotation*0.2,0), 3*delta)
+
+func changeScene(outside:bool):
+	if outside:
+		$Pivot.rotation_degrees = Vector3(-50,0,0)
+	else:
+		$Pivot.rotation_degrees = Vector3(-15,0,0)

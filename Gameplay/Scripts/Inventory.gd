@@ -25,5 +25,7 @@ func putObjectBack():
 
 func _process(delta: float) -> void:
 	if CurrentlyHolding:
-		CurrentlyHolding.global_position = $"../PickableObjectSlot".global_position
-		CurrentlyHolding.global_rotation =  $"../PickableObjectSlot".global_rotation
+		CurrentlyHolding.global_position = $PickableObjectSlot.global_position
+		CurrentlyHolding.BaseRigidBody.global_position = $"PickableObjectSlot".global_position
+		CurrentlyHolding.BaseRigidBody.freeze = true
+		CurrentlyHolding.global_rotation =  $"PickableObjectSlot".global_rotation
