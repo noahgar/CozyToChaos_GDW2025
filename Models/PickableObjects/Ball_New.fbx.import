@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cv8c4a0fwic1u"
+uid="uid://c4h8yyrdyyep2"
 path="res://.godot/imported/Ball_New.fbx-27beda1eb644c1c1f87fba0935955cd6.scn"
 
 [deps]
@@ -33,22 +33,11 @@ animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
-<<<<<<< HEAD
 "nodes": {
 "PATH:BallNew": {
 "generate/physics": true,
 "physics/body_type": 1,
 "physics/shape_type": 0
-=======
-"materials": {
-"Ball": {
-"use_external/enabled": true,
-"use_external/path": "uid://xns43nd65nqy"
-},
-"Streifen": {
-"use_external/enabled": true,
-"use_external/path": "uid://b1qerrod1aihe"
->>>>>>> 1ccaed56353488517b57186fded4d26415c31b05
 }
 }
 }
