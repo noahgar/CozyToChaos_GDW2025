@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cxs4hwducr5bp"
-path="res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"
+uid="uid://bklgo5ld2dgjb"
+path="res://.godot/imported/Pflanze_003.fbx-2aabc4a7b16303cd0d3eb9a4dc3ba1e4.scn"
 
 [deps]
 
-source_file="res://Models/Blockout/GardenBase/Garten.fbx"
-dest_files=["res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"]
+source_file="res://Models/PickableObjects/Old Objects/Pflanze_003.fbx"
+dest_files=["res://.godot/imported/Pflanze_003.fbx-2aabc4a7b16303cd0d3eb9a4dc3ba1e4.scn"]
 
 [params]
 
@@ -34,9 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Grass": {
+"Pflanze": {
 "use_external/enabled": true,
-"use_external/path": "uid://cbhe4s815dk70"
+"use_external/path": "uid://cgj57v1gnl7jt"
+},
+"PflanzeTopf": {
+"use_external/enabled": true,
+"use_external/path": "uid://c4i47sbv254x3"
 }
 }
 }

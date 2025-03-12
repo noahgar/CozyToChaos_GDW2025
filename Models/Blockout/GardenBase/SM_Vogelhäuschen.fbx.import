@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://eumx6jod1pqq"
-path="res://.godot/imported/Messer.fbx-845edace24cb3d8aaca20df0e5e45904.scn"
+uid="uid://bvc5qwhrbda8r"
+path="res://.godot/imported/SM_Vogelhäuschen.fbx-bea78d2ae30be020d096d5ea69e6a2fb.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Messer.fbx"
-dest_files=["res://.godot/imported/Messer.fbx-845edace24cb3d8aaca20df0e5e45904.scn"]
+source_file="res://Models/Blockout/GardenBase/SM_Vogelhäuschen.fbx"
+dest_files=["res://.godot/imported/SM_Vogelhäuschen.fbx-bea78d2ae30be020d096d5ea69e6a2fb.scn"]
 
 [params]
 
@@ -32,18 +32,7 @@ animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={
-"materials": {
-"MesserFront": {
-"use_external/enabled": true,
-"use_external/path": "uid://cbc330vrqlpbe"
-},
-"MesserGriff": {
-"use_external/enabled": true,
-"use_external/path": "uid://ci37r1f8y3j67"
-}
-}
-}
+_subresources={}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1

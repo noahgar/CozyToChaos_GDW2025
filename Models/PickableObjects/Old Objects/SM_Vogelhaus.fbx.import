@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cxs4hwducr5bp"
-path="res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"
+uid="uid://bkkfn1qys1iar"
+path="res://.godot/imported/SM_Vogelhaus.fbx-72889c2e81743185e55255c734a17ee3.scn"
 
 [deps]
 
-source_file="res://Models/Blockout/GardenBase/Garten.fbx"
-dest_files=["res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"]
+source_file="res://Models/PickableObjects/Old Objects/SM_Vogelhaus.fbx"
+dest_files=["res://.godot/imported/SM_Vogelhaus.fbx-72889c2e81743185e55255c734a17ee3.scn"]
 
 [params]
 
@@ -34,9 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Grass": {
+"Material.003": {
 "use_external/enabled": true,
-"use_external/path": "uid://cbhe4s815dk70"
+"use_external/path": "uid://4ttr2x5rbcgv"
+},
+"Material.008": {
+"use_external/enabled": true,
+"use_external/path": "uid://c51aq2phix4xo"
 }
 }
 }

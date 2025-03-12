@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cxs4hwducr5bp"
-path="res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"
+uid="uid://bywb5liq7kfr2"
+path="res://.godot/imported/Hantel.fbx-7fd5a471511a236c8fd2ecf70d026479.scn"
 
 [deps]
 
-source_file="res://Models/Blockout/GardenBase/Garten.fbx"
-dest_files=["res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"]
+source_file="res://Models/PickableObjects/Old Objects/Hantel.fbx"
+dest_files=["res://.godot/imported/Hantel.fbx-7fd5a471511a236c8fd2ecf70d026479.scn"]
 
 [params]
 
@@ -34,9 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Grass": {
+"Gewicht": {
 "use_external/enabled": true,
-"use_external/path": "uid://cbhe4s815dk70"
+"use_external/path": "uid://rye12rnst6yb"
+},
+"Mitte": {
+"use_external/enabled": true,
+"use_external/path": "uid://bm7xhjx1brey0"
 }
 }
 }

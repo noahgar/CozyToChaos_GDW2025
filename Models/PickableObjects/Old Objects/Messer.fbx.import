@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://beiu4dhwakptr"
-path="res://.godot/imported/Pflanze_002.fbx-c0c11d5e92b7ef55e466302eaa03c6f6.scn"
+uid="uid://eumx6jod1pqq"
+path="res://.godot/imported/Messer.fbx-10aa99bfcb31196a1c993e05e4fc1fe9.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Pflanze_002.fbx"
-dest_files=["res://.godot/imported/Pflanze_002.fbx-c0c11d5e92b7ef55e466302eaa03c6f6.scn"]
+source_file="res://Models/PickableObjects/Old Objects/Messer.fbx"
+dest_files=["res://.godot/imported/Messer.fbx-10aa99bfcb31196a1c993e05e4fc1fe9.scn"]
 
 [params]
 
@@ -34,13 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Pflanze": {
+"MesserFront": {
 "use_external/enabled": true,
-"use_external/path": "uid://cgj57v1gnl7jt"
+"use_external/path": "uid://cbc330vrqlpbe"
 },
-"PflanzeTopf": {
+"MesserGriff": {
 "use_external/enabled": true,
-"use_external/path": "uid://c4i47sbv254x3"
+"use_external/path": "uid://ci37r1f8y3j67"
 }
 }
 }

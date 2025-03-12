@@ -1,26 +1,30 @@
-[gd_scene load_steps=5 format=3 uid="uid://4155mcefjw8i"]
+[gd_scene load_steps=6 format=3 uid="uid://4155mcefjw8i"]
 
 [ext_resource type="Script" uid="uid://i6m6t873phwp" path="res://Gameplay/Scripts/DoorToBirdHouse.gd" id="1_4aa37"]
-[ext_resource type="PackedScene" uid="uid://ckscjy0l3jbue" path="res://Models/Trees/Tree_001.fbx" id="2_4aa37"]
+[ext_resource type="PackedScene" uid="uid://bkkfn1qys1iar" path="res://Models/PickableObjects/Old Objects/SM_Vogelhaus.fbx" id="2_4aa37"]
+[ext_resource type="PackedScene" uid="uid://bfgf2kvmuoyxk" path="res://Models/Blockout/GardenBase/SM_Großer_Baum.fbx" id="3_doy1y"]
+[ext_resource type="PackedScene" uid="uid://bvc5qwhrbda8r" path="res://Models/Blockout/GardenBase/SM_Vogelhäuschen.fbx" id="4_ov6q5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8yt1k"]
 size = Vector3(0.426758, 0.684082, 0.223175)
 
-[sub_resource type="BoxMesh" id="BoxMesh_8yt1k"]
-
 [node name="DoorIntoGarden" type="Node3D"]
+transform = Transform3D(1.4045, 0, 0, 0, 1.4045, 0, 0, 0, 1.4045, 0, 0, 0.160647)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
-transform = Transform3D(2.14178, 0, 0, 0, 2.14178, 0, 0, 0, 2.14178, 0, 0.0112429, 0)
+transform = Transform3D(1.64773, 0, 0, 0, 1.64773, 0, 0, 0, 3.9901, -0.70835, 1.49232, -0.0549724)
 script = ExtResource("1_4aa37")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.335205, 0.000372999)
 shape = SubResource("BoxShape3D_8yt1k")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.903018, 0, 0, 0, 1.46174, 0, 0, 0, 0.436323, 0, 0.737878, 0)
-mesh = SubResource("BoxMesh_8yt1k")
+[node name="SM_Vogelhaus" parent="." instance=ExtResource("2_4aa37")]
+transform = Transform3D(0.00437308, 0, -0.0993245, 0, 0.0994208, 0, 0.0993245, 0, 0.00437308, -0.755667, 2.38419e-07, -1.2028)
+visible = false
 
-[node name="Tree_001" parent="." instance=ExtResource("2_4aa37")]
-transform = Transform3D(-0.480055, 0, 0.877238, 0, 1, 0, -0.877238, 0, -0.480055, -0.0414923, 0, -0.509193)
+[node name="SM_Großer_Baum" parent="." instance=ExtResource("3_doy1y")]
+transform = Transform3D(-0.00722289, 0, -0.0970123, 0, 0.0972809, 0, 0.0970123, 0, -0.00722289, -0.685243, 0, -1.21776)
+
+[node name="SM_Vogelhäuschen" parent="." instance=ExtResource("4_ov6q5")]
+transform = Transform3D(0.000194122, -0.00140227, -0.121305, 0.0161388, 0.120228, -0.00136399, 0.120235, -0.0161356, 0.000378934, -0.79275, 2.41442, -0.350847)

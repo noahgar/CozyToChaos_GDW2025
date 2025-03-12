@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cxs4hwducr5bp"
-path="res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"
+uid="uid://bailtq5s23oh7"
+path="res://.godot/imported/Ball.fbx-8ac15cb86b18875706f6f91c82a3de30.scn"
 
 [deps]
 
-source_file="res://Models/Blockout/GardenBase/Garten.fbx"
-dest_files=["res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"]
+source_file="res://Models/PickableObjects/Old Objects/Ball.fbx"
+dest_files=["res://.godot/imported/Ball.fbx-8ac15cb86b18875706f6f91c82a3de30.scn"]
 
 [params]
 
@@ -34,9 +34,19 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Grass": {
+"Ball": {
 "use_external/enabled": true,
-"use_external/path": "uid://cbhe4s815dk70"
+"use_external/path": "uid://xns43nd65nqy"
+},
+"Streifen": {
+"use_external/enabled": true,
+"use_external/path": "uid://b1qerrod1aihe"
+}
+},
+"nodes": {
+"PATH:Ball": {
+"generate/physics": true,
+"physics/body_type": 1
 }
 }
 }

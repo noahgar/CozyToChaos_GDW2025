@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bkkfn1qys1iar"
-path="res://.godot/imported/SM_Vogelhaus.fbx-b044e8a2dd38dc15f8f5ac8ee9fb3041.scn"
+uid="uid://wn868kg2esa5"
+path="res://.godot/imported/Apfel.fbx-5ee41b8babd9fc16abf131fc211d1af0.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/SM_Vogelhaus.fbx"
-dest_files=["res://.godot/imported/SM_Vogelhaus.fbx-b044e8a2dd38dc15f8f5ac8ee9fb3041.scn"]
+source_file="res://Models/PickableObjects/Old Objects/Apfel.fbx"
+dest_files=["res://.godot/imported/Apfel.fbx-5ee41b8babd9fc16abf131fc211d1af0.scn"]
 
 [params]
 
@@ -34,13 +34,23 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Material.003": {
+"Apfel Grundfarbe": {
 "use_external/enabled": true,
-"use_external/path": "uid://4ttr2x5rbcgv"
+"use_external/path": "uid://c4uctm0juyygm"
 },
-"Material.008": {
+"Blatt": {
 "use_external/enabled": true,
-"use_external/path": "uid://c51aq2phix4xo"
+"use_external/path": "uid://bee8irs74crgk"
+},
+"Stiel": {
+"use_external/enabled": true,
+"use_external/path": "uid://duqdfhu8ftd6r"
+}
+},
+"nodes": {
+"PATH:Apfel": {
+"generate/physics": true,
+"physics/body_type": 1
 }
 }
 }

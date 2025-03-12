@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ic4nmhftj0bs"
-path="res://.godot/imported/Tasse.fbx-72d14c159a920b430d569b87826c9b95.scn"
+path="res://.godot/imported/Tasse.fbx-b568b0c3168c89931f9338441fb20270.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Tasse.fbx"
-dest_files=["res://.godot/imported/Tasse.fbx-72d14c159a920b430d569b87826c9b95.scn"]
+source_file="res://Models/PickableObjects/Old Objects/Tasse.fbx"
+dest_files=["res://.godot/imported/Tasse.fbx-b568b0c3168c89931f9338441fb20270.scn"]
 
 [params]
 

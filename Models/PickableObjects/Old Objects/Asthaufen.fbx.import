@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bklgo5ld2dgjb"
-path="res://.godot/imported/Pflanze_003.fbx-f6e4bc8c0502c02c7f86712144b24f97.scn"
+uid="uid://240m7xqyjlsi"
+path="res://.godot/imported/Asthaufen.fbx-de3dc546cae1df869d6276d57ace11aa.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Pflanze_003.fbx"
-dest_files=["res://.godot/imported/Pflanze_003.fbx-f6e4bc8c0502c02c7f86712144b24f97.scn"]
+source_file="res://Models/PickableObjects/Old Objects/Asthaufen.fbx"
+dest_files=["res://.godot/imported/Asthaufen.fbx-de3dc546cae1df869d6276d57ace11aa.scn"]
 
 [params]
 
@@ -34,13 +34,9 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Pflanze": {
+"Material": {
 "use_external/enabled": true,
-"use_external/path": "uid://cgj57v1gnl7jt"
-},
-"PflanzeTopf": {
-"use_external/enabled": true,
-"use_external/path": "uid://c4i47sbv254x3"
+"use_external/path": "uid://bqgyg1uy6dp4c"
 }
 }
 }
