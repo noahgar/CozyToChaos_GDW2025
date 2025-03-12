@@ -12,6 +12,8 @@ config_version=5
 
 config/name="CozyToChaos"
 run/main_scene="uid://clgetsbpcwdpp"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="CozyToChaos_Screenshots"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 
 [rendering]
