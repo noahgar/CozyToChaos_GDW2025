@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cxs4hwducr5bp"
-path="res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"
+uid="uid://bvslyo7i4q746"
+path="res://.godot/imported/Schirm.fbx-8360873e83a1716033db1bfa600d9166.scn"
 
 [deps]
 
-source_file="res://Models/Blockout/GardenBase/Garten.fbx"
-dest_files=["res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"]
+source_file="res://Models/PickableObjects/Schirm.fbx"
+dest_files=["res://.godot/imported/Schirm.fbx-8360873e83a1716033db1bfa600d9166.scn"]
 
 [params]
 
@@ -34,21 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Grass": {
+"Schirm A": {
 "use_external/enabled": true,
-"use_external/path": "uid://cbhe4s815dk70"
+"use_external/path": "uid://dfwjs0qpgdo84"
 },
-"Path": {
+"Schirm B": {
 "use_external/enabled": true,
-"use_external/path": "uid://bnchxgc5i3i57"
-},
-"Street Path": {
-"use_external/enabled": true,
-"use_external/path": "uid://cwrsvg8ehieuw"
-},
-"Umrandung": {
-"use_external/enabled": true,
-"use_external/path": "uid://bbh2dc6mlmasq"
+"use_external/path": "uid://cbwsrmpxmn48c"
 }
 }
 }

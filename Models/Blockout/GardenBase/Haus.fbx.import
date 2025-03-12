@@ -34,9 +34,25 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
+"Balkon und Sims": {
+"use_external/enabled": true,
+"use_external/path": "uid://byuiqsfbdr561"
+},
+"Dach": {
+"use_external/enabled": true,
+"use_external/path": "uid://b341vn1olacul"
+},
+"Fenster": {
+"use_external/enabled": true,
+"use_external/path": "uid://c37p6yb54la5u"
+},
 "Fensterrahmen": {
 "use_external/enabled": true,
 "use_external/path": "uid://cixypylk4vbws"
+},
+"Hauswand": {
+"use_external/enabled": true,
+"use_external/path": "uid://dw75n0awaclva"
 },
 "Streifen": {
 "use_external/enabled": true,

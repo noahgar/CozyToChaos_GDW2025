@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cxs4hwducr5bp"
-path="res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"
+uid="uid://ct6dqssjxn31p"
+path="res://.godot/imported/Koffer.fbx-48507e0562c5b8e3644474964f9ffddc.scn"
 
 [deps]
 
-source_file="res://Models/Blockout/GardenBase/Garten.fbx"
-dest_files=["res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"]
+source_file="res://Models/PickableObjects/Koffer.fbx"
+dest_files=["res://.godot/imported/Koffer.fbx-48507e0562c5b8e3644474964f9ffddc.scn"]
 
 [params]
 
@@ -32,26 +32,7 @@ animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={
-"materials": {
-"Grass": {
-"use_external/enabled": true,
-"use_external/path": "uid://cbhe4s815dk70"
-},
-"Path": {
-"use_external/enabled": true,
-"use_external/path": "uid://bnchxgc5i3i57"
-},
-"Street Path": {
-"use_external/enabled": true,
-"use_external/path": "uid://cwrsvg8ehieuw"
-},
-"Umrandung": {
-"use_external/enabled": true,
-"use_external/path": "uid://bbh2dc6mlmasq"
-}
-}
-}
+_subresources={}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1
