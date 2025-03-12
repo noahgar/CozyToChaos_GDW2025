@@ -33,6 +33,13 @@ animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
+<<<<<<< HEAD
+"nodes": {
+"PATH:BallNew": {
+"generate/physics": true,
+"physics/body_type": 1,
+"physics/shape_type": 0
+=======
 "materials": {
 "Ball": {
 "use_external/enabled": true,
@@ -41,6 +48,7 @@ _subresources={
 "Streifen": {
 "use_external/enabled": true,
 "use_external/path": "uid://b1qerrod1aihe"
+>>>>>>> 1ccaed56353488517b57186fded4d26415c31b05
 }
 }
 }

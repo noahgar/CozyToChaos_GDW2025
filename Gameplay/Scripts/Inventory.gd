@@ -8,13 +8,17 @@ func _ready():
 func pickUpObject(object:PickableObject):
 	if CurrentlyHolding:
 		CurrentlyHolding.putMyselfBack()
-	
+	var root:RootSceneScript = get_tree().root.get_child(0)
+	if root.currentStep == 1:
+		root.proceedToStep(2)
 	CurrentlyHolding = object
 
 func layDownObjectAtPosition(position:Vector3):
 	if CurrentlyHolding:
 		CurrentlyHolding.layMyselfDownAtPosition(position)
-	
+	var root:RootSceneScript = get_tree().root.get_child(0)
+	if root.currentStep == 3:
+		root.proceedToStep(4)
 	CurrentlyHolding = null
 
 func putObjectBack():
