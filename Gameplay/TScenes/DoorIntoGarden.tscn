@@ -1,22 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://wkmbl0nntixx"]
+[gd_scene load_steps=3 format=3 uid="uid://wkmbl0nntixx"]
 
 [ext_resource type="Script" uid="uid://cbqf3d28urq4g" path="res://Gameplay/Scripts/DoorIntoGarden.gd" id="1_b6yre"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8yt1k"]
-size = Vector3(0.426758, 0.684082, 0.223175)
-
-[sub_resource type="BoxMesh" id="BoxMesh_8yt1k"]
+size = Vector3(0.950195, 1.02103, 0.223175)
 
 [node name="DoorIntoGarden" type="Node3D"]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
-transform = Transform3D(2.14178, 0, 0, 0, 2.14178, 0, 0, 0, 2.14178, 0, 0.0112429, 0)
+transform = Transform3D(2.14178, 0, 0, 0, 2.14178, 0, 0, 0, 2.14178, 0, 0.0112429, 0.49839)
 script = ExtResource("1_b6yre")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.335205, 0.000372999)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.079834, 0.667969, 0.000373006)
 shape = SubResource("BoxShape3D_8yt1k")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.903018, 0, 0, 0, 1.46174, 0, 0, 0, 0.436323, 0, 0.737878, 0)
-mesh = SubResource("BoxMesh_8yt1k")

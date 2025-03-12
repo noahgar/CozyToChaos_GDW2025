@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://rhnyx8kihu84"]
+
+[ext_resource type="Script" uid="uid://cbqf3d28urq4g" path="res://Gameplay/Scripts/DoorIntoGarden.gd" id="1_eam2r"]
+[ext_resource type="PackedScene" uid="uid://cmbvlhoy6mkhx" path="res://Models/BirdHouseIndoor/BirdHouse_Exit.fbx" id="2_pi73p"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eam2r"]
+size = Vector3(0.290039, 0.301392, 1.27844)
+
+[node name="DoorIntoGarden" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(2.14178, 0, 0, 0, 2.14178, 0, 0, 0, 2.14178, 0, 0.0112429, 0.49839)
+script = ExtResource("1_eam2r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.079834, 0.0834355, 0.516791)
+shape = SubResource("BoxShape3D_eam2r")
+
+[node name="BirdHouse_Exit" parent="." instance=ExtResource("2_pi73p")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -0.0786018, -2.83759)

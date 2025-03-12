@@ -284,7 +284,7 @@ void light() {
 
 }
 "
-graph_offset = Vector2(-324.902, -229.958)
+graph_offset = Vector2(-1158.64, 100.545)
 nodes/fragment/0/position = Vector2(20, 180)
 nodes/fragment/18/node = SubResource("VisualShaderNodeColorParameter_lsw1g")
 nodes/fragment/18/position = Vector2(-1120, 240)

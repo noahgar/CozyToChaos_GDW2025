@@ -1,7 +1,14 @@
-extends PhysicsBody3D
+extends Node3D
+
+var BaseStaticBody:StaticBody3D
 
 func _ready() -> void:
-	self.input_event.connect(_on_input_event)
+	for child in get_child(0).get_children():
+		if child is StaticBody3D:
+			BaseStaticBody = child
+	if BaseStaticBody:
+		BaseStaticBody.input_event.connect(_on_input_event)
+		print_debug("t")
 	
 func _on_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
 	if event is InputEventMouseButton:
