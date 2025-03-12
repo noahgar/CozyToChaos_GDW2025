@@ -6,5 +6,3 @@
 render_priority = 0
 shader = ExtResource("1_12vy4")
 shader_parameter/Albedo = Color(0.281204, 0.203912, 0.0914944, 1)
-shader_parameter/AmbientColor = Color(0.576752, 0.736188, 0.917392, 1)
-shader_parameter/SpecularSize = 1.0

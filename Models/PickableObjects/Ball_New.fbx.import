@@ -3,13 +3,12 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cv8c4a0fwic1u"
-path="res://.godot/imported/Ball_New.fbx-27beda1eb644c1c1f87fba0935955cd6.scn"
+uid="uid://cb7w2aial61ob"
+valid=false
 
 [deps]
 
 source_file="res://Models/PickableObjects/Ball_New.fbx"
-dest_files=["res://.godot/imported/Ball_New.fbx-27beda1eb644c1c1f87fba0935955cd6.scn"]
 
 [params]
 
@@ -32,26 +31,7 @@ animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={
-<<<<<<< HEAD
-"nodes": {
-"PATH:BallNew": {
-"generate/physics": true,
-"physics/body_type": 1,
-"physics/shape_type": 0
-=======
-"materials": {
-"Ball": {
-"use_external/enabled": true,
-"use_external/path": "uid://xns43nd65nqy"
-},
-"Streifen": {
-"use_external/enabled": true,
-"use_external/path": "uid://b1qerrod1aihe"
->>>>>>> 1ccaed56353488517b57186fded4d26415c31b05
-}
-}
-}
-fbx/importer=0
+_subresources={}
+fbx/importer=1
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1
