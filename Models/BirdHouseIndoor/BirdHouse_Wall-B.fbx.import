@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://wn868kg2esa5"
-path="res://.godot/imported/Apfel.fbx-5ee41b8babd9fc16abf131fc211d1af0.scn"
+uid="uid://d16t8jk7wnfq1"
+path="res://.godot/imported/BirdHouse_Wall-B.fbx-2f5ffd14b6701db1b1be7e45d48fcc53.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Old Objects/Apfel.fbx"
-dest_files=["res://.godot/imported/Apfel.fbx-5ee41b8babd9fc16abf131fc211d1af0.scn"]
+source_file="res://Models/BirdHouseIndoor/BirdHouse_Wall-B.fbx"
+dest_files=["res://.godot/imported/BirdHouse_Wall-B.fbx-2f5ffd14b6701db1b1be7e45d48fcc53.scn"]
 
 [params]
 
@@ -33,26 +33,11 @@ animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
-"materials": {
-"Apfel Grundfarbe": {
-"use_external/enabled": true,
-"use_external/path": "uid://c4uctm0juyygm"
-},
-"Blatt": {
-"use_external/enabled": true,
-"use_external/path": "uid://bee8irs74crgk"
-},
-"Stiel": {
-"use_external/enabled": true,
-"use_external/path": "uid://duqdfhu8ftd6r"
-}
-},
 "nodes": {
-"PATH:Apfel": {
-"generate/navmesh": 2,
-"generate/occluder": 2,
+"PATH:Rückseite": {
 "generate/physics": true,
-"physics/body_type": 1
+"mesh_instance/cast_shadow": 0,
+"physics/shape_type": 1
 }
 }
 }

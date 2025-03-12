@@ -41,9 +41,9 @@ func layMyselfDownAtPosition(targetPosition:Vector3):
 	var root:RootSceneScript = get_tree().root.get_child(0)
 	if !root.isOutside:
 		self.reparent(root.BirdHouse)
-	self.global_transform = startingTransform
-	BaseRigidBody.global_transform = startingTransform
+	self.global_transform = startingTransform.rotated(Vector3(0,1,0),deg_to_rad(root.camera.cameraTargetRotation-45))
+	BaseRigidBody.global_transform = self.global_transform
 	self.global_position = targetPosition + Vector3(0,1,0)
-	BaseRigidBody.global_position = targetPosition + Vector3(0,1,0)
+	BaseRigidBody.global_position = self.global_position
 	BaseRigidBody.freeze = false
 	isPickedUp = false

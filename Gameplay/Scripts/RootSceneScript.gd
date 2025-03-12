@@ -2,8 +2,10 @@ class_name RootSceneScript extends Node3D
 
 var birdInventory:inventory
 var camera:cameraRotation
-var BirdHouse
+var BirdHouse:birdHouseScript
 var isOutside:bool
+var currentDay:int = 1
+var currentStep:int = 0
 
 func _ready() -> void:
 	$Garden01.visible = false
