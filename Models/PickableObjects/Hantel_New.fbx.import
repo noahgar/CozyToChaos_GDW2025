@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bailtq5s23oh7"
-path="res://.godot/imported/Ball.fbx-3dc409970a4e782b9bc9699c0ae377e8.scn"
+uid="uid://ci0hhhgr8bjrc"
+path="res://.godot/imported/Hantel_New.fbx-73abab5bc54fb6df9592bc666ad85c4e.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Ball.fbx"
-dest_files=["res://.godot/imported/Ball.fbx-3dc409970a4e782b9bc9699c0ae377e8.scn"]
+source_file="res://Models/PickableObjects/Hantel_New.fbx"
+dest_files=["res://.godot/imported/Hantel_New.fbx-73abab5bc54fb6df9592bc666ad85c4e.scn"]
 
 [params]
 
@@ -32,24 +32,7 @@ animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={
-"materials": {
-"Ball": {
-"use_external/enabled": true,
-"use_external/path": "uid://xns43nd65nqy"
-},
-"Streifen": {
-"use_external/enabled": true,
-"use_external/path": "uid://b1qerrod1aihe"
-}
-},
-"nodes": {
-"PATH:Ball": {
-"generate/physics": true,
-"physics/body_type": 1
-}
-}
-}
+_subresources={}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1

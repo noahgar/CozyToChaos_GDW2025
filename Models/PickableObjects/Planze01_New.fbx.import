@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c5mblvnnyghtq"
-path="res://.godot/imported/Pflanze_001.fbx-ffbd6ad9af313f2f1d01e1a989c474bf.scn"
+uid="uid://ciibif68ktgl6"
+path="res://.godot/imported/Planze01_New.fbx-b437cfc9a73f2ee33608fe21812e2cce.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Pflanze_001.fbx"
-dest_files=["res://.godot/imported/Pflanze_001.fbx-ffbd6ad9af313f2f1d01e1a989c474bf.scn"]
+source_file="res://Models/PickableObjects/Planze01_New.fbx"
+dest_files=["res://.godot/imported/Planze01_New.fbx-b437cfc9a73f2ee33608fe21812e2cce.scn"]
 
 [params]
 

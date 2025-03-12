@@ -37,6 +37,18 @@ _subresources={
 "Dach": {
 "use_external/enabled": true,
 "use_external/path": "uid://yrqmr2srbmi8"
+},
+"Fensterrahmen": {
+"use_external/enabled": true,
+"use_external/path": "uid://cixypylk4vbws"
+},
+"Streifen": {
+"use_external/enabled": true,
+"use_external/path": "uid://cixypylk4vbws"
+},
+"Tür": {
+"use_external/enabled": true,
+"use_external/path": "uid://cixypylk4vbws"
 }
 }
 }

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bkkfn1qys1iar"
-path="res://.godot/imported/SM_Vogelhaus.fbx-b044e8a2dd38dc15f8f5ac8ee9fb3041.scn"
+uid="uid://240m7xqyjlsi"
+path="res://.godot/imported/Asthaufen.fbx-de3dc546cae1df869d6276d57ace11aa.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/SM_Vogelhaus.fbx"
-dest_files=["res://.godot/imported/SM_Vogelhaus.fbx-b044e8a2dd38dc15f8f5ac8ee9fb3041.scn"]
+source_file="res://Models/PickableObjects/Old Objects/Asthaufen.fbx"
+dest_files=["res://.godot/imported/Asthaufen.fbx-de3dc546cae1df869d6276d57ace11aa.scn"]
 
 [params]
 
@@ -34,13 +34,9 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Material.003": {
+"Material": {
 "use_external/enabled": true,
-"use_external/path": "uid://4ttr2x5rbcgv"
-},
-"Material.008": {
-"use_external/enabled": true,
-"use_external/path": "uid://c51aq2phix4xo"
+"use_external/path": "uid://bqgyg1uy6dp4c"
 }
 }
 }

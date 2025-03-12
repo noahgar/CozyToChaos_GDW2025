@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bywb5liq7kfr2"
-path="res://.godot/imported/Hantel.fbx-7bbaa0fcb8c46027f0fffc6a58a59b56.scn"
+uid="uid://dumqp8e6qran"
+path="res://.godot/imported/Lampe_New.fbx-cf463748af7b88fbe591dda3fd443663.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Hantel.fbx"
-dest_files=["res://.godot/imported/Hantel.fbx-7bbaa0fcb8c46027f0fffc6a58a59b56.scn"]
+source_file="res://Models/PickableObjects/Lampe_New.fbx"
+dest_files=["res://.godot/imported/Lampe_New.fbx-cf463748af7b88fbe591dda3fd443663.scn"]
 
 [params]
 
@@ -32,18 +32,7 @@ animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={
-"materials": {
-"Gewicht": {
-"use_external/enabled": true,
-"use_external/path": "uid://rye12rnst6yb"
-},
-"Mitte": {
-"use_external/enabled": true,
-"use_external/path": "uid://bm7xhjx1brey0"
-}
-}
-}
+_subresources={}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1

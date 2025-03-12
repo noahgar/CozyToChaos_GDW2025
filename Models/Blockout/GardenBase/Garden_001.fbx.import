@@ -51,7 +51,7 @@ _subresources={
 "use_external/path": "uid://dnwr4ujenleli"
 },
 "Grass": {
-"use_external/enabled": true,
+"use_external/enabled": false,
 "use_external/path": "uid://cbhe4s815dk70"
 },
 "Hauswand": {

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://240m7xqyjlsi"
-path="res://.godot/imported/Asthaufen.fbx-ebb1f17ebaf085e3a2cc2a51e6c88e4a.scn"
+uid="uid://dq1jblo2yaqvq"
+path="res://.godot/imported/Laptop.fbx-9259f4ec040bb89b7ec954c639ca0471.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Asthaufen.fbx"
-dest_files=["res://.godot/imported/Asthaufen.fbx-ebb1f17ebaf085e3a2cc2a51e6c88e4a.scn"]
+source_file="res://Models/PickableObjects/Old Objects/Laptop.fbx"
+dest_files=["res://.godot/imported/Laptop.fbx-9259f4ec040bb89b7ec954c639ca0471.scn"]
 
 [params]
 
@@ -34,9 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Material": {
+"Material.002": {
 "use_external/enabled": true,
-"use_external/path": "uid://bqgyg1uy6dp4c"
+"use_external/path": "uid://cixypylk4vbws"
+},
+"Material.004": {
+"use_external/enabled": true,
+"use_external/path": "uid://d0in3oyanloh7"
 }
 }
 }

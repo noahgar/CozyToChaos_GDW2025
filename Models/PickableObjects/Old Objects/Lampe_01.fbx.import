@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bklgo5ld2dgjb"
-path="res://.godot/imported/Pflanze_003.fbx-f6e4bc8c0502c02c7f86712144b24f97.scn"
+uid="uid://dcq4dvjk26qhi"
+path="res://.godot/imported/Lampe_01.fbx-843987ddf683adb3d5c22177b401922a.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Pflanze_003.fbx"
-dest_files=["res://.godot/imported/Pflanze_003.fbx-f6e4bc8c0502c02c7f86712144b24f97.scn"]
+source_file="res://Models/PickableObjects/Old Objects/Lampe_01.fbx"
+dest_files=["res://.godot/imported/Lampe_01.fbx-843987ddf683adb3d5c22177b401922a.scn"]
 
 [params]
 
@@ -32,18 +32,7 @@ animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={
-"materials": {
-"Pflanze": {
-"use_external/enabled": true,
-"use_external/path": "uid://cgj57v1gnl7jt"
-},
-"PflanzeTopf": {
-"use_external/enabled": true,
-"use_external/path": "uid://c4i47sbv254x3"
-}
-}
-}
+_subresources={}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1

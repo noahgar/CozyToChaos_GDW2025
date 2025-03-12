@@ -41,6 +41,10 @@ _subresources={
 "Streifen": {
 "use_external/enabled": true,
 "use_external/path": "uid://cixypylk4vbws"
+},
+"Tür": {
+"use_external/enabled": true,
+"use_external/path": "uid://cixypylk4vbws"
 }
 }
 }

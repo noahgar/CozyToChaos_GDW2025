@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://catfnla50cmqx"
-path="res://.godot/imported/Bank.fbx-b991c7aeca00eae54772e0d5529d6e60.scn"
+uid="uid://btj4nymnxgm5m"
+path="res://.godot/imported/Bank_New.fbx-86c7e374f8c49ee51c3d5f62c7522bb3.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Bank.fbx"
-dest_files=["res://.godot/imported/Bank.fbx-b991c7aeca00eae54772e0d5529d6e60.scn"]
+source_file="res://Models/PickableObjects/Bank_New.fbx"
+dest_files=["res://.godot/imported/Bank_New.fbx-86c7e374f8c49ee51c3d5f62c7522bb3.scn"]
 
 [params]
 
@@ -32,24 +32,7 @@ animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={
-"materials": {
-"Akzente": {
-"use_external/enabled": true,
-"use_external/path": "uid://uhb1qymj45v7"
-},
-"Bank Sitzbereich": {
-"use_external/enabled": true,
-"use_external/path": "uid://bhss0dp4ni054"
-}
-},
-"nodes": {
-"PATH:Bank": {
-"generate/physics": true,
-"physics/body_type": 1
-}
-}
-}
+_subresources={}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1

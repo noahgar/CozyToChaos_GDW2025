@@ -5,6 +5,6 @@
 [resource]
 render_priority = 0
 shader = ExtResource("1_w0nt2")
-shader_parameter/Albedo = Color(0.341854, 0.441539, 0.162884, 1)
+shader_parameter/Albedo = Color(0.25741, 0.379575, 0.127135, 1)
 shader_parameter/AmbientColor = Color(0.701812, 0.725487, 0.890135, 1)
 shader_parameter/SpecularSize = 1.0

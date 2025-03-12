@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cxs4hwducr5bp"
-path="res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"
+uid="uid://catfnla50cmqx"
+path="res://.godot/imported/Bank.fbx-b0ae798bd3c3d55a2ccbfbfcef0972c2.scn"
 
 [deps]
 
-source_file="res://Models/Blockout/GardenBase/Garten.fbx"
-dest_files=["res://.godot/imported/Garten.fbx-e06b2498b79e4d58426d4193a9a54830.scn"]
+source_file="res://Models/PickableObjects/Old Objects/Bank.fbx"
+dest_files=["res://.godot/imported/Bank.fbx-b0ae798bd3c3d55a2ccbfbfcef0972c2.scn"]
 
 [params]
 
@@ -34,9 +34,19 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Grass": {
+"Akzente": {
 "use_external/enabled": true,
-"use_external/path": "uid://cbhe4s815dk70"
+"use_external/path": "uid://uhb1qymj45v7"
+},
+"Bank Sitzbereich": {
+"use_external/enabled": true,
+"use_external/path": "uid://bhss0dp4ni054"
+}
+},
+"nodes": {
+"PATH:Bank": {
+"generate/physics": true,
+"physics/body_type": 1
 }
 }
 }
