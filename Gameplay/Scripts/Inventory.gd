@@ -13,9 +13,9 @@ func pickUpObject(object:PickableObject):
 		root.proceedToStep(2)
 	CurrentlyHolding = object
 
-func layDownObjectAtPosition(position:Vector3):
+func layDownObjectAtPosition(positionToLayDown:Vector3):
 	if CurrentlyHolding:
-		CurrentlyHolding.layMyselfDownAtPosition(position)
+		CurrentlyHolding.layMyselfDownAtPosition(positionToLayDown)
 	var root:RootSceneScript = get_tree().root.get_child(0)
 	if root.currentStep == 3:
 		root.proceedToStep(4)
@@ -27,7 +27,7 @@ func putObjectBack():
 	
 	CurrentlyHolding = null
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if CurrentlyHolding:
 		CurrentlyHolding.global_position = $PickableObjectSlot.global_position
 		CurrentlyHolding.BaseRigidBody.global_position = $"PickableObjectSlot".global_position

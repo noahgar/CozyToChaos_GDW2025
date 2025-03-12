@@ -28,7 +28,7 @@ var envMat
 func _ready() -> void:
 	envMat = worldEnvironment.environment.sky.sky_material
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	timeOfDay = fmod(timeOfDay, 1.0)
 	
 	if directionalLight != null:
