@@ -20,7 +20,7 @@ func _ready() -> void:
 	
 	wallVisibilityBasedOnCamera(45)
 
-func _on_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
+func _on_input_event(_camera: Node, event: InputEvent, _event_position: Vector3, _normal: Vector3, _shape_idx: int) -> void:
 	if event is InputEventMouseButton:
 		if event.button_mask&(MOUSE_BUTTON_MASK_LEFT):
 			var root:RootSceneScript = get_tree().root.get_child(0)
