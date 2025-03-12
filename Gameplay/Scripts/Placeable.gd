@@ -8,7 +8,6 @@ func _ready() -> void:
 			BaseStaticBody = child
 	if BaseStaticBody:
 		BaseStaticBody.input_event.connect(_on_input_event)
-		print_debug("t")
 	
 func _on_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
 	if event is InputEventMouseButton:

@@ -12,6 +12,8 @@ func _ready() -> void:
 			BaseRigidBody = child
 	if BaseRigidBody:
 		BaseRigidBody.input_event.connect(_on_input_event)
+	
+	BaseRigidBody.freeze = true
 	startingTransform = self.global_transform
 	startingParent = self.get_parent_node_3d()
 	
@@ -32,9 +34,9 @@ func _on_input_event(camera: Node, event: InputEvent, event_position: Vector3, n
 
 func putMyselfBack():
 	self.reparent(startingParent)
-	self.global_transform = startingTransform.translated(Vector3(0,1,0))
-	BaseRigidBody.global_transform = startingTransform.translated(Vector3(0,1,0))
-	BaseRigidBody.freeze = false
+	BaseRigidBody.freeze = true
+	self.global_transform = startingTransform
+	#BaseRigidBody.global_transform = self.global_transform
 	isPickedUp = false
 	
 func layMyselfDownAtPosition(targetPosition:Vector3):
@@ -42,8 +44,8 @@ func layMyselfDownAtPosition(targetPosition:Vector3):
 	if !root.isOutside:
 		self.reparent(root.BirdHouse)
 	self.global_transform = startingTransform.rotated(Vector3(0,1,0),deg_to_rad(root.camera.cameraTargetRotation-45))
-	BaseRigidBody.global_transform = self.global_transform
+	#BaseRigidBody.global_transform = self.global_transform
 	self.global_position = targetPosition + Vector3(0,1,0)
-	BaseRigidBody.global_position = self.global_position
+	#BaseRigidBody.global_position = self.global_position
 	BaseRigidBody.freeze = false
 	isPickedUp = false

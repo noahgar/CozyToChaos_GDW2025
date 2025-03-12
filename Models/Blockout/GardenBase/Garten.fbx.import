@@ -38,6 +38,12 @@ _subresources={
 "use_external/enabled": true,
 "use_external/path": "uid://cbhe4s815dk70"
 }
+},
+"nodes": {
+"PATH:Garden": {
+"generate/physics": true,
+"physics/shape_type": 1
+}
 }
 }
 fbx/importer=0
