@@ -17,7 +17,7 @@ bones/4/scale = Vector3(1, 1, 1)
 cast_shadow = 0
 
 [node name="AnimationPlayer" parent="." index="1"]
-speed_scale = 1.5
+speed_scale = 1.7
 script = ExtResource("2_d6eg3")
 
 [node name="PickableObjectSlot" type="Node3D" parent="." index="2"]

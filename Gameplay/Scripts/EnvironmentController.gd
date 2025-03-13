@@ -19,10 +19,9 @@ var envMat
 @export var rainyHorizonColor:Gradient
 
 @export_category("Weather")
+@export_range(0, 1) var badWeather:float
 @export var rainVFX:GPUParticles3D
-@export_range(0, 1) var rain:float
 @export var windVFX:GPUParticles3D
-@export_range(0, 1) var wind:float
 
 
 func _ready() -> void:
@@ -32,20 +31,21 @@ func _process(_delta: float) -> void:
 	timeOfDay = clamp(timeOfDay, 0, 1)
 	
 	if directionalLight != null:
-		var currentSun = lerp(sunColor.sample(timeOfDay), rainySunColor.sample(timeOfDay), rain)
-		var currentShadow = shadowOpacity.sample(timeOfDay) * (1 - rain)
+		var currentSun = lerp(sunColor.sample(timeOfDay), rainySunColor.sample(timeOfDay), badWeather)
+		var currentShadow = shadowOpacity.sample(timeOfDay) * (1 - badWeather)
 		directionalLight.light_color = currentSun
 		directionalLight.shadow_opacity = currentShadow
 	
 	if envMat != null:
-		var currentSky = lerp(skyColor.sample(timeOfDay), rainySkyColor.sample(timeOfDay), rain)
-		var currentHorizon = lerp(horizonColor.sample(timeOfDay), rainyHorizonColor.sample(timeOfDay), rain)
+		var currentSky = lerp(skyColor.sample(timeOfDay), rainySkyColor.sample(timeOfDay), badWeather)
+		var currentHorizon = lerp(horizonColor.sample(timeOfDay), rainyHorizonColor.sample(timeOfDay), badWeather)
 		envMat.set_shader_parameter("skyColor", currentSky)
 		envMat.set_shader_parameter("horizonColor", currentHorizon)
+		worldEnvironment.environment.fog_density = badWeather
 	
 	if rainVFX != null:
-		rainVFX.amount_ratio = rain
+		rainVFX.amount_ratio = badWeather
 	
 	if windVFX != null:
-		windVFX.amount_ratio = wind
+		windVFX.amount_ratio = badWeather
 	
