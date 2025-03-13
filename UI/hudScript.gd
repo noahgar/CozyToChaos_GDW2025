@@ -52,10 +52,10 @@ func decideTooltipText():
 	var mostImportantObject
 	for object in hoveredObjects:
 		if object is PickableObject:
-			if mostImportantObject is not DoorToBirdHouse or DoorToGarden or PlaceableScript:
+			if mostImportantObject is not DoorToBirdHouse or DoorToGarden or PlaceableScript or BedScript:
 				mostImportantObject = object
 		elif object is PlaceableScript:
-			if mostImportantObject is not DoorToBirdHouse or DoorToGarden:
+			if mostImportantObject is not DoorToBirdHouse or DoorToGarden or BedScript:
 				mostImportantObject = object
 		elif object is DoorToBirdHouse:
 			mostImportantObject = object
