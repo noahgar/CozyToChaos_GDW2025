@@ -1,24 +1,76 @@
-[gd_scene load_steps=3 format=3 uid="uid://bbdnlj8afwdck"]
+[gd_scene load_steps=11 format=3 uid="uid://bbdnlj8afwdck"]
 
 [ext_resource type="PackedScene" uid="uid://ceybygcrggcjj" path="res://Models/Bird/Bird.fbx" id="1_g5k2s"]
 [ext_resource type="Script" uid="uid://cp8v7uqvwn3gr" path="res://Gameplay/Scripts/BirdAnimation.gd" id="2_d6eg3"]
+[ext_resource type="Texture2D" uid="uid://ehogbr7iawvm" path="res://Models/Bird/Materials/BirbTex.png" id="3_k8cs8"]
+[ext_resource type="Texture2D" uid="uid://5txjg15lxq0a" path="res://Models/Bird/Materials/BirbTex_tired.png" id="4_kcntc"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_k8cs8"]
+animation = &"Idle"
+
+[sub_resource type="AnimationNodeOneShot" id="AnimationNodeOneShot_kcntc"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4frvm"]
+animation = &"Pick"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qvydb"]
+animation = &"IdleTired"
+
+[sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_uc1gi"]
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_mgm1b"]
+graph_offset = Vector2(-432.97, 167.524)
+nodes/Idle/node = SubResource("AnimationNodeAnimation_k8cs8")
+nodes/Idle/position = Vector2(-220, 20)
+nodes/Pick/node = SubResource("AnimationNodeOneShot_kcntc")
+nodes/Pick/position = Vector2(240, 160)
+nodes/PickAnim/node = SubResource("AnimationNodeAnimation_4frvm")
+nodes/PickAnim/position = Vector2(20, 340)
+nodes/Tired/node = SubResource("AnimationNodeBlend2_uc1gi")
+nodes/Tired/position = Vector2(20, 80)
+"nodes/Tired 2/node" = SubResource("AnimationNodeAnimation_qvydb")
+"nodes/Tired 2/position" = Vector2(-220, 180)
+nodes/output/position = Vector2(460, 160)
+node_connections = [&"Pick", 0, &"Tired", &"Pick", 1, &"PickAnim", &"Tired", 0, &"Idle", &"Tired", 1, &"Tired 2", &"output", 0, &"Pick"]
 
 [node name="Bird" instance=ExtResource("1_g5k2s")]
 
+[node name="BirdController" type="Node3D" parent="." index="0" node_paths=PackedStringArray("birdMesh", "animator")]
+script = ExtResource("2_d6eg3")
+regularTex = ExtResource("3_k8cs8")
+tiredTex = ExtResource("4_kcntc")
+birdMesh = NodePath("../Rig/Skeleton3D/Bird")
+animator = NodePath("../AnimationTree")
+
 [node name="Skeleton3D" parent="Rig" index="0"]
-bones/3/position = Vector3(-1.16286e-07, 0.202149, -1.80735e-08)
-bones/3/rotation = Quaternion(-1.10359e-07, -3.20566e-08, -0.315158, 0.949039)
+bones/0/rotation = Quaternion(-0.697133, 0.116204, 0.118347, 0.697493)
+bones/2/position = Vector3(0.0397844, 1.58453e-08, 0.276776)
+bones/2/rotation = Quaternion(0.655247, -0.288663, 0.281433, 0.638843)
+bones/2/scale = Vector3(1, 1, 1)
+bones/3/position = Vector3(-0.00712325, -0.00651219, 5.50365e-08)
+bones/3/rotation = Quaternion(-0.00546807, 0.014794, 0.926203, -0.376695)
 bones/3/scale = Vector3(1, 1, 1)
-bones/4/position = Vector3(1.93189e-07, 0.196738, -2.59634e-08)
-bones/4/rotation = Quaternion(-2.64537e-08, 5.0971e-08, -0.0789864, 0.996876)
-bones/4/scale = Vector3(1, 1, 1)
+bones/5/position = Vector3(-1.16286e-07, 0.202149, -1.80735e-08)
+bones/5/rotation = Quaternion(0.00765278, -0.00427762, -0.315284, 0.948957)
+bones/5/scale = Vector3(1, 1, 1)
+bones/6/position = Vector3(1.93189e-07, 0.196738, -2.59634e-08)
+bones/6/rotation = Quaternion(0.00827015, -0.000912283, -0.0790205, 0.996838)
+bones/6/scale = Vector3(1, 1, 1)
+bones/8/rotation = Quaternion(-0.690905, 0.115107, 0.11938, 0.703668)
 
 [node name="Bird" parent="Rig/Skeleton3D" index="0"]
 cast_shadow = 0
 
-[node name="AnimationPlayer" parent="." index="1"]
-speed_scale = 1.7
-script = ExtResource("2_d6eg3")
+[node name="AnimationPlayer" parent="." index="2"]
+reset_on_save = false
 
-[node name="PickableObjectSlot" type="Node3D" parent="." index="2"]
+[node name="PickableObjectSlot" type="Node3D" parent="." index="3"]
 transform = Transform3D(-0.126188, -0.0143635, -0.124327, -0.125148, 0.016216, 0.125148, 0.00122962, 0.176402, -0.0216277, 5.95255, 0.742367, 12.1615)
+
+[node name="AnimationTree" type="AnimationTree" parent="." index="4"]
+tree_root = SubResource("AnimationNodeBlendTree_mgm1b")
+anim_player = NodePath("../AnimationPlayer")
+parameters/Pick/active = false
+parameters/Pick/internal_active = false
+parameters/Pick/request = 0
+parameters/Tired/blend_amount = 0.0
