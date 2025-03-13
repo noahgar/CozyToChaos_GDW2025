@@ -25,7 +25,6 @@ func putObjectBack():
 	if CurrentlyHolding:
 		CurrentlyHolding.putMyselfBack()
 		var root:RootSceneScript = get_tree().root.get_child(0)
-		root.proceedToStep(1)
 	
 	CurrentlyHolding = null
 
