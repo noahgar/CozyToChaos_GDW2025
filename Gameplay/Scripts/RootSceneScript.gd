@@ -35,7 +35,7 @@ func goToGarden():
 	isOutside = true
 	camera.changeScene(true)
 	proceedToStep(1)
-	if birdFlap != null: birdFlap.play()
+	if birdFlap != null: birdFlap.play()  
 
 func proceedToStep(step:int):
 	currentStep = step

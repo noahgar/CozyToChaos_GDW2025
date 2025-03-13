@@ -1,9 +1,10 @@
 class_name inventory extends Node3D
 
 var CurrentlyHolding:PickableObject
+var BirdAnim:BirdAnimation
 
 func _ready():
-	pass
+	BirdAnim = $BirdController
 	
 func pickUpObject(object:PickableObject):
 	if CurrentlyHolding:
@@ -12,6 +13,8 @@ func pickUpObject(object:PickableObject):
 	if root.currentStep == 1:
 		root.proceedToStep(2)
 	CurrentlyHolding = object
+	
+	if BirdAnim != null: BirdAnim.pick()
 
 func layDownObjectAtPosition(positionToLayDown:Vector3):
 	if CurrentlyHolding:
@@ -20,13 +23,16 @@ func layDownObjectAtPosition(positionToLayDown:Vector3):
 	if root.currentStep == 3:
 		root.proceedToStep(4)
 	CurrentlyHolding = null
+	
+	if BirdAnim != null: BirdAnim.pick()
 
 func putObjectBack():
 	if CurrentlyHolding:
 		CurrentlyHolding.putMyselfBack()
 		var root:RootSceneScript = get_tree().root.get_child(0)
-	
 	CurrentlyHolding = null
+	
+	if BirdAnim != null: BirdAnim.pick()
 
 func _process(_delta: float) -> void:
 	if CurrentlyHolding:
