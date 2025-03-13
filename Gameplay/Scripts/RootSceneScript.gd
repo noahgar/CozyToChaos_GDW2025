@@ -1,5 +1,6 @@
 class_name RootSceneScript extends Node3D
 
+@export var birdFlap:AudioStreamPlayer
 var birdInventory:inventory
 var camera:cameraRotation
 var BirdHouse:birdHouseScript
@@ -26,6 +27,7 @@ func goToBirdHouse():
 	isOutside = false
 	camera.changeScene(false)
 	proceedToStep(3)
+	if birdFlap != null: birdFlap.play()
 
 func goToGarden():
 	Garden.visible = true
@@ -33,6 +35,7 @@ func goToGarden():
 	isOutside = true
 	camera.changeScene(true)
 	proceedToStep(1)
+	if birdFlap != null: birdFlap.play()
 
 func proceedToStep(step:int):
 	currentStep = step
