@@ -34,6 +34,6 @@ func _process(delta):
 
 func changeScene(outside:bool):
 	if outside:
-		$Pivot.rotation_degrees = Vector3(-15,0,0)
+		$Pivot.rotation_degrees = Vector3(-60,0,0)
 	else:
 		$Pivot.rotation_degrees = Vector3(-15,0,0)

@@ -7,7 +7,13 @@ var currentDay:int = 0
 
 func _ready() -> void:
 	currentDay = 0
-	iterateToDay(0)
+	if Engine.is_editor_hint():
+		# Code to execute in editor.
+		toolIterateToDay(0)
+
+	if not Engine.is_editor_hint():
+		# Code to execute in game.
+		iterateToDay(0)
 
 func incrementDay():
 	proceedToDay(currentDay+1)
@@ -22,7 +28,6 @@ func iterateToDay(d):
 	for day in daysArray:
 		day.setDayInactive()
 	for i in d+1:
-		print_debug("s")
 		if daysArray.size()>i:
 			daysArray[i].setDayActive()
 
@@ -31,7 +36,6 @@ func toolIterateToDay(d):
 	for day in daysArray:
 		setDayInactive(day.makeVisibleArray,day.makeInvisibleArray)
 	for i in d+1:
-		print_debug("s")
 		if daysArray.size()>i:
 			setDayActive(daysArray[i].makeVisibleArray,daysArray[i].makeInvisibleArray)
 
