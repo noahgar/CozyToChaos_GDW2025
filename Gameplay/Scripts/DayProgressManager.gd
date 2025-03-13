@@ -7,7 +7,7 @@ var currentDay:int = 0
 
 func proceedToDay(d):
 	while currentDay<d:
-		currentDay
+		currentDay += 1
 		daysArray[currentDay].setDayActive()
 
 func iterateToDay(d):
@@ -33,7 +33,7 @@ func setDayActive(makeVisibleArray:Array[Node3D],makeInvisibleArray:Array[Node3D
 	for node in makeInvisibleArray:
 		node.visible = false
 
-func setDayInactive(makeVisibleArray:Array[Node3D],makeInvisibleArray:Array[Node3D]):
+func setDayInactive(makeVisibleArray:Array[Node3D],_makeInvisibleArray:Array[Node3D]):
 	for node in makeVisibleArray:
 		node.visible = false
 

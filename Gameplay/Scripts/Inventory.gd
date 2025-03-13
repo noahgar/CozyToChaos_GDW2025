@@ -29,7 +29,6 @@ func layDownObjectAtPosition(positionToLayDown:Vector3):
 func putObjectBack():
 	if CurrentlyHolding:
 		CurrentlyHolding.putMyselfBack()
-		var root:RootSceneScript = get_tree().root.get_child(0)
 	CurrentlyHolding = null
 	
 	if BirdAnim != null: BirdAnim.pick()
