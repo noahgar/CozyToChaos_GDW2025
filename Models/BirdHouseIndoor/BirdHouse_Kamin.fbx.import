@@ -33,6 +33,24 @@ animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
+"materials": {
+"Material.003": {
+"use_external/enabled": true,
+"use_external/path": "uid://duqdfhu8ftd6r"
+},
+"Material.005": {
+"use_external/enabled": true,
+"use_external/path": "uid://bpmiivlu0q75i"
+},
+"Material.006": {
+"use_external/enabled": true,
+"use_external/path": "uid://duqdfhu8ftd6r"
+},
+"Material.011": {
+"use_external/enabled": true,
+"use_external/path": "uid://hqahflg8es6e"
+}
+},
 "nodes": {
 "PATH:Kamin": {
 "generate/physics": true
