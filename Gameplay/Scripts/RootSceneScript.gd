@@ -52,4 +52,5 @@ func proceedToStep(step:int):
 			pass
 		5: #night (sleeping transition)
 			hudScript.playNightAnim()
+			Garden.dayProgressManager.incrementDay()
 			proceedToStep(0)

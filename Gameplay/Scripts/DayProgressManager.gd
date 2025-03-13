@@ -5,10 +5,18 @@ class_name DayProgressManager
 var currentDay:int = 0
 @export var daysArray:Array[DayChanger]
 
+func _ready() -> void:
+	currentDay = 0
+	iterateToDay(0)
+
+func incrementDay():
+	proceedToDay(currentDay+1)
+
 func proceedToDay(d):
 	while currentDay<d:
 		currentDay += 1
-		daysArray[currentDay].setDayActive()
+		if daysArray.size() > currentDay:
+			daysArray[currentDay].setDayActive()
 
 func iterateToDay(d):
 	for day in daysArray:
