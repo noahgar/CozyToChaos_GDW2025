@@ -19,7 +19,6 @@ animation = &"IdleTired"
 [sub_resource type="AnimationNodeBlend2" id="AnimationNodeBlend2_uc1gi"]
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_mgm1b"]
-graph_offset = Vector2(-432.97, 167.524)
 nodes/Idle/node = SubResource("AnimationNodeAnimation_k8cs8")
 nodes/Idle/position = Vector2(-220, 20)
 nodes/Pick/node = SubResource("AnimationNodeOneShot_kcntc")
@@ -45,16 +44,15 @@ animator = NodePath("../AnimationTree")
 [node name="Skeleton3D" parent="Rig" index="0"]
 bones/0/rotation = Quaternion(-0.697133, 0.116204, 0.118347, 0.697493)
 bones/2/position = Vector3(0.0397844, 1.58453e-08, 0.276776)
-bones/2/rotation = Quaternion(0.542097, -0.250305, 0.315619, 0.73747)
 bones/2/scale = Vector3(1, 1, 1)
 bones/3/position = Vector3(-0.00712325, -0.00651219, 5.50365e-08)
-bones/3/rotation = Quaternion(0.0801562, -0.215501, 0.900886, -0.368156)
+bones/3/rotation = Quaternion(5.38117e-06, 1.97365e-06, 0.926322, -0.376732)
 bones/3/scale = Vector3(1, 1, 1)
 bones/5/position = Vector3(-1.16286e-07, 0.202149, -1.80735e-08)
-bones/5/rotation = Quaternion(-0.0500155, 0.0508111, -0.311738, 0.947489)
+bones/5/rotation = Quaternion(-1.10359e-07, -3.20566e-08, -0.315158, 0.949039)
 bones/5/scale = Vector3(1, 1, 1)
 bones/6/position = Vector3(1.93189e-07, 0.196738, -2.59634e-08)
-bones/6/rotation = Quaternion(-0.120028, 0.0460656, -0.0788325, 0.988563)
+bones/6/rotation = Quaternion(-2.64537e-08, 5.0971e-08, -0.0789864, 0.996876)
 bones/6/scale = Vector3(1, 1, 1)
 bones/8/rotation = Quaternion(-0.690905, 0.115107, 0.11938, 0.703668)
 
@@ -62,15 +60,16 @@ bones/8/rotation = Quaternion(-0.690905, 0.115107, 0.11938, 0.703668)
 cast_shadow = 0
 
 [node name="AnimationPlayer" parent="." index="2"]
+active = false
 reset_on_save = false
 
-[node name="PickableObjectSlot" type="Node3D" parent="." index="3"]
-transform = Transform3D(-0.126188, -0.0143635, -0.124327, -0.125148, 0.016216, 0.125148, 0.00122962, 0.176402, -0.0216277, 5.95255, 0.742367, 12.1615)
-
-[node name="AnimationTree" type="AnimationTree" parent="." index="4"]
+[node name="AnimationTree" type="AnimationTree" parent="." index="3"]
 tree_root = SubResource("AnimationNodeBlendTree_mgm1b")
 anim_player = NodePath("../AnimationPlayer")
 parameters/Pick/active = false
 parameters/Pick/internal_active = false
 parameters/Pick/request = 0
 parameters/Tired/blend_amount = 0.0
+
+[node name="PickableObjectSlot" type="Node3D" parent="." index="4"]
+transform = Transform3D(0.177643, -0.00546594, -2.72925e-08, 0.00546594, 0.177643, -1.82047e-08, 2.78394e-08, 1.73567e-08, 0.177727, 5.82002, 0.76402, 12.1615)

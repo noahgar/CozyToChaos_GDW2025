@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://d33p2gcqtproo"
-path="res://.godot/imported/Tasse_New.fbx-131a1efa8f83735713ad457a14bd6cb7.scn"
+uid="uid://dwfkw2487nkxc"
+path="res://.godot/imported/Luftmatratze.fbx-1613d18fc4e74cb723c6c8d421a6a0b1.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Tasse_New.fbx"
-dest_files=["res://.godot/imported/Tasse_New.fbx-131a1efa8f83735713ad457a14bd6cb7.scn"]
+source_file="res://Models/PickableObjects/Luftmatratze.fbx"
+dest_files=["res://.godot/imported/Luftmatratze.fbx-1613d18fc4e74cb723c6c8d421a6a0b1.scn"]
 
 [params]
 
@@ -34,13 +34,17 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Tasse": {
+"01": {
 "use_external/enabled": true,
-"use_external/path": "uid://n58whkokg7vd"
+"use_external/path": "uid://cc1hudebxpv7q"
+},
+"02": {
+"use_external/enabled": true,
+"use_external/path": "uid://5ya1sahad5ge"
 }
 },
 "nodes": {
-"PATH:Tasse_New": {
+"PATH:Luftmatratze": {
 "generate/physics": true,
 "physics/body_type": 1
 }

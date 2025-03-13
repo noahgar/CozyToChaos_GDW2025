@@ -5,6 +5,4 @@
 [resource]
 render_priority = 0
 shader = ExtResource("1_wtkfw")
-shader_parameter/Albedo = Color(0.451058, 0.304228, 0.445227, 1)
-shader_parameter/AmbientColor = Color(0.383475, 0.545508, 0.814996, 1)
-shader_parameter/SpecularSize = 1.0
+shader_parameter/Albedo = Color(0.969759, 0.802681, 1, 1)

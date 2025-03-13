@@ -42,6 +42,12 @@ _subresources={
 "use_external/enabled": true,
 "use_external/path": "uid://c4i47sbv254x3"
 }
+},
+"nodes": {
+"PATH:Pflanze1new": {
+"generate/physics": true,
+"physics/body_type": 1
+}
 }
 }
 fbx/importer=0

@@ -42,6 +42,12 @@ _subresources={
 "use_external/enabled": true,
 "use_external/path": "uid://cbwsrmpxmn48c"
 }
+},
+"nodes": {
+"PATH:Schirm": {
+"generate/physics": true,
+"physics/body_type": 1
+}
 }
 }
 fbx/importer=0
