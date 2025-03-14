@@ -79,14 +79,14 @@ badWeather = 0.395
 [node name="Credits" type="TextEdit" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.626
-anchor_top = 0.486
-anchor_right = 0.626
-anchor_bottom = 0.486
-offset_left = -614.92
-offset_top = -234.88
-offset_right = 451.08
-offset_bottom = 235.12
+anchor_left = 0.547
+anchor_top = 0.5
+anchor_right = 0.547
+anchor_bottom = 0.5
+offset_left = -487.24
+offset_top = -257.0
+offset_right = 578.76
+offset_bottom = 263.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/background_color = Color(0, 0.764706, 0, 0)
@@ -94,11 +94,32 @@ theme_override_colors/font_color = Color(0.776471, 0.388235, 0.364706, 1)
 theme_override_fonts/font = ExtResource("2_7pjlb")
 theme_override_font_sizes/font_size = 42
 theme_override_styles/normal = SubResource("StyleBoxEmpty_petif")
-text = "Gordon - 
-Noah -
-Jil Zander - https://jilzanderart.myportfolio.com/
-Selaeyne - 
-Ian -
+text = "Gordon
+Noah
+Jil Zander		https://jilzanderart.myportfolio.com/
+Selaeyne		https://www.instagram.com/selaeyne/
+Ian
+"
+
+[node name="Credits Überschrift" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.547
+anchor_top = 0.5
+anchor_right = 0.547
+anchor_bottom = 0.5
+offset_left = -118.24
+offset_top = -385.0
+offset_right = 947.76
+offset_bottom = 135.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/background_color = Color(0, 0.764706, 0, 0)
+theme_override_colors/font_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_fonts/font = ExtResource("2_7pjlb")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_petif")
+text = "Credits
 "
 
 [node name="WeaselClub" type="Sprite2D" parent="."]
