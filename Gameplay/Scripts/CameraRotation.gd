@@ -3,6 +3,18 @@ class_name cameraRotation extends Node3D
 var cameraTargetRotation:float = 45
 var currentRealRotation:float = 0
 
+@export var birdPositionIndoor:Vector3 = Vector3(31,-35,104)
+@export var birdPositionOutdoor:Vector3 = Vector3(27,-38,104)
+
+@export var cameraSizeIndoor:float = 10
+@export var cameraSizeOutdoor:float = 15
+
+@export var cameraRotationDownIndoor:float = -15
+@export var cameraRotationDownOutdoor:float = -45
+
+@export var cameraPivotDownwardsTransformInside:float = 2
+@export var cameraPivotDownwardsTransformOutside:float = -2.5
+
 func _ready():
 	pass
 
@@ -34,6 +46,12 @@ func _process(delta):
 
 func changeScene(outside:bool):
 	if outside:
-		$Pivot.rotation_degrees = Vector3(-60,0,0)
+		$Pivot.rotation_degrees = Vector3(cameraRotationDownOutdoor,0,0)
+		$Pivot.position = Vector3(0,cameraPivotDownwardsTransformOutside,0)
+		$Pivot/Camera3D.size = cameraSizeOutdoor
+		$Pivot/Bird.position = birdPositionOutdoor
 	else:
-		$Pivot.rotation_degrees = Vector3(-15,0,0)
+		$Pivot.rotation_degrees = Vector3(cameraRotationDownIndoor,0,0)
+		$Pivot.position = Vector3(0,cameraPivotDownwardsTransformInside,0)
+		$Pivot/Camera3D.size = cameraSizeIndoor
+		$Pivot/Bird.position = birdPositionIndoor
