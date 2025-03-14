@@ -41,13 +41,16 @@ func toolIterateToDay(d):
 
 func setDayActive(makeVisibleArray:Array[Node3D],makeInvisibleArray:Array[Node3D]):
 	for node in makeVisibleArray:
-		node.visible = true
+		if node:
+			node.visible = true
 	for node in makeInvisibleArray:
-		node.visible = false
+		if node:
+			node.visible = false
 
 func setDayInactive(makeVisibleArray:Array[Node3D],_makeInvisibleArray:Array[Node3D]):
 	for node in makeVisibleArray:
-		node.visible = false
+		if node:
+			node.visible = false
 
 # custom property list
 func _get_property_list() -> Array:
