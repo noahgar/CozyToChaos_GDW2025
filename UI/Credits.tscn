@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://8hoagoyyk5me"]
+[gd_scene load_steps=9 format=3 uid="uid://8hoagoyyk5me"]
 
 [ext_resource type="Script" uid="uid://i1gsxlu18d7w" path="res://UI/credits.gd" id="1_7pjlb"]
 [ext_resource type="Texture2D" uid="uid://qn5suaqnoejc" path="res://UI/Sprites/button1.png" id="1_knjku"]
 [ext_resource type="PackedScene" uid="uid://va4vcjrgfjsc" path="res://Scenes/Garden_01.scn" id="1_qvjrn"]
 [ext_resource type="FontFile" uid="uid://cqrw645ej8m4p" path="res://UI/Fonts/Cooper-SemiBold.otf" id="2_7pjlb"]
 [ext_resource type="PackedScene" uid="uid://boeeb6v3cj317" path="res://Scenes/Lighting.scn" id="2_lqvxy"]
+[ext_resource type="Texture2D" uid="uid://0423jsmoki8u" path="res://UI/Sprites/WeaselClub_.png" id="6_petif"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7pjlb"]
 
@@ -98,5 +99,10 @@ Jil Zander - https://jilzanderart.myportfolio.com/
 Selaeyne - 
 Ian -
 "
+
+[node name="WeaselClub" type="Sprite2D" parent="."]
+position = Vector2(1050.25, 798.75)
+scale = Vector2(0.0947, 0.0904352)
+texture = ExtResource("6_petif")
 
 [connection signal="pressed" from="SubViewportContainer/BackToMenu/BackToMenu" to="." method="_on_back_to_menu_pressed"]
