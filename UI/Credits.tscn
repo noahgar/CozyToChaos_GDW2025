@@ -95,9 +95,9 @@ theme_override_fonts/font = ExtResource("2_7pjlb")
 theme_override_font_sizes/font_size = 42
 theme_override_styles/normal = SubResource("StyleBoxEmpty_petif")
 text = "Gordon
-Noah
 Jil Zander		https://jilzanderart.myportfolio.com/
 Selaeyne		https://www.instagram.com/selaeyne/
+Noah
 Ian
 "
 
