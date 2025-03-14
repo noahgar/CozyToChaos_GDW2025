@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dkv38ikqaeog3"
-path="res://.godot/imported/Apfel_New.fbx-a9762d6050a8642b66f6d73e1738109f.scn"
+uid="uid://db2yahrom5uyi"
+path="res://.godot/imported/GrassBlades.fbx-17f5d85e11e5d92bba298fb06b55ee3f.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Apfel_New.fbx"
-dest_files=["res://.godot/imported/Apfel_New.fbx-a9762d6050a8642b66f6d73e1738109f.scn"]
+source_file="res://Models/Blockout/GardenBase/GrassBlades.fbx"
+dest_files=["res://.godot/imported/GrassBlades.fbx-17f5d85e11e5d92bba298fb06b55ee3f.scn"]
 
 [params]
 
@@ -34,23 +34,9 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Apfel Grundfarbe": {
+"Grass": {
 "use_external/enabled": true,
-"use_external/path": "uid://cbwsrmpxmn48c"
-},
-"Blatt": {
-"use_external/enabled": true,
-"use_external/path": "uid://bee8irs74crgk"
-},
-"Stiel": {
-"use_external/enabled": true,
-"use_external/path": "uid://duqdfhu8ftd6r"
-}
-},
-"nodes": {
-"PATH:Apfel new": {
-"generate/physics": true,
-"physics/body_type": 1
+"use_external/path": "uid://c8bpawsc726sj"
 }
 }
 }

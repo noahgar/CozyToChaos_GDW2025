@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dkv38ikqaeog3"
-path="res://.godot/imported/Apfel_New.fbx-a9762d6050a8642b66f6d73e1738109f.scn"
+uid="uid://da40n40nh4sm0"
+path="res://.godot/imported/Plattenspieler.fbx-a36a42194f79f84748481445c6f21024.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Apfel_New.fbx"
-dest_files=["res://.godot/imported/Apfel_New.fbx-a9762d6050a8642b66f6d73e1738109f.scn"]
+source_file="res://Models/PickableObjects/Plattenspieler.fbx"
+dest_files=["res://.godot/imported/Plattenspieler.fbx-a36a42194f79f84748481445c6f21024.scn"]
 
 [params]
 
@@ -34,23 +34,25 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Apfel Grundfarbe": {
+"BraunDunkel": {
 "use_external/enabled": true,
-"use_external/path": "uid://cbwsrmpxmn48c"
+"use_external/path": "uid://byuiqsfbdr561"
 },
-"Blatt": {
+"BraunHell": {
 "use_external/enabled": true,
-"use_external/path": "uid://bee8irs74crgk"
+"use_external/path": "uid://dnwr4ujenleli"
 },
-"Stiel": {
+"Grau": {
 "use_external/enabled": true,
-"use_external/path": "uid://duqdfhu8ftd6r"
-}
+"use_external/path": "uid://dfwjs0qpgdo84"
 },
-"nodes": {
-"PATH:Apfel new": {
-"generate/physics": true,
-"physics/body_type": 1
+"Rot": {
+"use_external/enabled": true,
+"use_external/path": "uid://c4uctm0juyygm"
+},
+"Schwarz": {
+"use_external/enabled": true,
+"use_external/path": "uid://cixypylk4vbws"
 }
 }
 }

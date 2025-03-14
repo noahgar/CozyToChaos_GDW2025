@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dkv38ikqaeog3"
-path="res://.godot/imported/Apfel_New.fbx-a9762d6050a8642b66f6d73e1738109f.scn"
+uid="uid://by6cobg3h3wng"
+path="res://.godot/imported/Buch.fbx-4570e3377b845576cfee0c069e8cf141.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Apfel_New.fbx"
-dest_files=["res://.godot/imported/Apfel_New.fbx-a9762d6050a8642b66f6d73e1738109f.scn"]
+source_file="res://Models/PickableObjects/Buch.fbx"
+dest_files=["res://.godot/imported/Buch.fbx-4570e3377b845576cfee0c069e8cf141.scn"]
 
 [params]
 
@@ -34,23 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Apfel Grundfarbe": {
+"Rot": {
 "use_external/enabled": true,
-"use_external/path": "uid://cbwsrmpxmn48c"
+"use_external/path": "uid://c4uctm0juyygm"
 },
-"Blatt": {
+"Weiss": {
 "use_external/enabled": true,
-"use_external/path": "uid://bee8irs74crgk"
-},
-"Stiel": {
-"use_external/enabled": true,
-"use_external/path": "uid://duqdfhu8ftd6r"
-}
-},
-"nodes": {
-"PATH:Apfel new": {
-"generate/physics": true,
-"physics/body_type": 1
+"use_external/path": "uid://cc1hudebxpv7q"
 }
 }
 }

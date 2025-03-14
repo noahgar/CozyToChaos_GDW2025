@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dkv38ikqaeog3"
-path="res://.godot/imported/Apfel_New.fbx-a9762d6050a8642b66f6d73e1738109f.scn"
+uid="uid://blttj5kb77het"
+path="res://.godot/imported/Schreibmaschine.fbx-0c65f4d1e8c27d9bf4a3a84aebb87574.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Apfel_New.fbx"
-dest_files=["res://.godot/imported/Apfel_New.fbx-a9762d6050a8642b66f6d73e1738109f.scn"]
+source_file="res://Models/PickableObjects/Schreibmaschine.fbx"
+dest_files=["res://.godot/imported/Schreibmaschine.fbx-0c65f4d1e8c27d9bf4a3a84aebb87574.scn"]
 
 [params]
 
@@ -34,23 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Apfel Grundfarbe": {
+"BraunDunkel": {
 "use_external/enabled": true,
-"use_external/path": "uid://cbwsrmpxmn48c"
+"use_external/path": "uid://byuiqsfbdr561"
 },
-"Blatt": {
+"BraunHell": {
 "use_external/enabled": true,
-"use_external/path": "uid://bee8irs74crgk"
-},
-"Stiel": {
-"use_external/enabled": true,
-"use_external/path": "uid://duqdfhu8ftd6r"
-}
-},
-"nodes": {
-"PATH:Apfel new": {
-"generate/physics": true,
-"physics/body_type": 1
+"use_external/path": "uid://bhss0dp4ni054"
 }
 }
 }

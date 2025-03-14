@@ -32,7 +32,22 @@ animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={}
+_subresources={
+"materials": {
+"Dach": {
+"use_external/enabled": true,
+"use_external/path": "uid://b341vn1olacul"
+},
+"Gewicht": {
+"use_external/enabled": true,
+"use_external/path": "uid://cixypylk4vbws"
+},
+"MesserGriff": {
+"use_external/enabled": true,
+"use_external/path": "uid://ci37r1f8y3j67"
+}
+}
+}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1

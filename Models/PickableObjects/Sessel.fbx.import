@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dkv38ikqaeog3"
-path="res://.godot/imported/Apfel_New.fbx-a9762d6050a8642b66f6d73e1738109f.scn"
+uid="uid://brsrgc17kh3qm"
+path="res://.godot/imported/Sessel.fbx-5f0d71da3ec191a5243571b905065529.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Apfel_New.fbx"
-dest_files=["res://.godot/imported/Apfel_New.fbx-a9762d6050a8642b66f6d73e1738109f.scn"]
+source_file="res://Models/PickableObjects/Sessel.fbx"
+dest_files=["res://.godot/imported/Sessel.fbx-5f0d71da3ec191a5243571b905065529.scn"]
 
 [params]
 
@@ -34,23 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Apfel Grundfarbe": {
+"BraunDunkel": {
 "use_external/enabled": true,
-"use_external/path": "uid://cbwsrmpxmn48c"
+"use_external/path": "uid://byuiqsfbdr561"
 },
-"Blatt": {
+"Rot": {
 "use_external/enabled": true,
 "use_external/path": "uid://bee8irs74crgk"
-},
-"Stiel": {
-"use_external/enabled": true,
-"use_external/path": "uid://duqdfhu8ftd6r"
-}
-},
-"nodes": {
-"PATH:Apfel new": {
-"generate/physics": true,
-"physics/body_type": 1
 }
 }
 }
