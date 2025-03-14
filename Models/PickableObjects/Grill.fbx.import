@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://da40n40nh4sm0"
-path="res://.godot/imported/Plattenspieler.fbx-a36a42194f79f84748481445c6f21024.scn"
+uid="uid://caqylb2n612d7"
+path="res://.godot/imported/Grill.fbx-1ce747b61c20a65f0461c815f6b44318.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Plattenspieler.fbx"
-dest_files=["res://.godot/imported/Plattenspieler.fbx-a36a42194f79f84748481445c6f21024.scn"]
+source_file="res://Models/PickableObjects/Grill.fbx"
+dest_files=["res://.godot/imported/Grill.fbx-1ce747b61c20a65f0461c815f6b44318.scn"]
 
 [params]
 
@@ -34,29 +34,17 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"BraunDunkel": {
+"Red": {
 "use_external/enabled": true,
-"use_external/path": "uid://byuiqsfbdr561"
+"use_external/path": "uid://cbwsrmpxmn48c"
 },
-"BraunHell": {
-"use_external/enabled": true,
-"use_external/path": "uid://dnwr4ujenleli"
-},
-"Grau": {
-"use_external/enabled": true,
-"use_external/path": "uid://dfwjs0qpgdo84"
-},
-"Rot": {
-"use_external/enabled": true,
-"use_external/path": "uid://c4uctm0juyygm"
-},
-"Schwarz": {
+"White": {
 "use_external/enabled": true,
 "use_external/path": "uid://cixypylk4vbws"
 }
 },
 "nodes": {
-"PATH:PlattenSpieler": {
+"PATH:Grill": {
 "generate/physics": true,
 "physics/body_type": 1
 }

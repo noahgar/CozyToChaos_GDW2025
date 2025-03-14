@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://da40n40nh4sm0"
-path="res://.godot/imported/Plattenspieler.fbx-a36a42194f79f84748481445c6f21024.scn"
+uid="uid://bhwsnnshkx7dc"
+path="res://.godot/imported/GardenChair.fbx-3ea3f31dac8ff939379b40ab08381a01.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Plattenspieler.fbx"
-dest_files=["res://.godot/imported/Plattenspieler.fbx-a36a42194f79f84748481445c6f21024.scn"]
+source_file="res://Models/PickableObjects/GardenChair.fbx"
+dest_files=["res://.godot/imported/GardenChair.fbx-3ea3f31dac8ff939379b40ab08381a01.scn"]
 
 [params]
 
@@ -34,29 +34,17 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"BraunDunkel": {
+"Orange": {
 "use_external/enabled": true,
-"use_external/path": "uid://byuiqsfbdr561"
+"use_external/path": "uid://cyaa2vq01p0i3"
 },
-"BraunHell": {
+"Wood": {
 "use_external/enabled": true,
-"use_external/path": "uid://dnwr4ujenleli"
-},
-"Grau": {
-"use_external/enabled": true,
-"use_external/path": "uid://dfwjs0qpgdo84"
-},
-"Rot": {
-"use_external/enabled": true,
-"use_external/path": "uid://c4uctm0juyygm"
-},
-"Schwarz": {
-"use_external/enabled": true,
-"use_external/path": "uid://cixypylk4vbws"
+"use_external/path": "uid://bhss0dp4ni054"
 }
 },
 "nodes": {
-"PATH:PlattenSpieler": {
+"PATH:Chair": {
 "generate/physics": true,
 "physics/body_type": 1
 }

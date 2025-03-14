@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://da40n40nh4sm0"
-path="res://.godot/imported/Plattenspieler.fbx-a36a42194f79f84748481445c6f21024.scn"
+uid="uid://c2e86f8n3d225"
+path="res://.godot/imported/Pylone.fbx-78bc0f40fb6f56d1e3b1243c9a250e8e.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Plattenspieler.fbx"
-dest_files=["res://.godot/imported/Plattenspieler.fbx-a36a42194f79f84748481445c6f21024.scn"]
+source_file="res://Models/PickableObjects/Pylone.fbx"
+dest_files=["res://.godot/imported/Pylone.fbx-78bc0f40fb6f56d1e3b1243c9a250e8e.scn"]
 
 [params]
 
@@ -34,31 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"BraunDunkel": {
+"Orange": {
 "use_external/enabled": true,
-"use_external/path": "uid://byuiqsfbdr561"
+"use_external/path": "uid://cyaa2vq01p0i3"
 },
-"BraunHell": {
+"White": {
 "use_external/enabled": true,
-"use_external/path": "uid://dnwr4ujenleli"
-},
-"Grau": {
-"use_external/enabled": true,
-"use_external/path": "uid://dfwjs0qpgdo84"
-},
-"Rot": {
-"use_external/enabled": true,
-"use_external/path": "uid://c4uctm0juyygm"
-},
-"Schwarz": {
-"use_external/enabled": true,
-"use_external/path": "uid://cixypylk4vbws"
-}
-},
-"nodes": {
-"PATH:PlattenSpieler": {
-"generate/physics": true,
-"physics/body_type": 1
+"use_external/path": "uid://cc1hudebxpv7q"
 }
 }
 }

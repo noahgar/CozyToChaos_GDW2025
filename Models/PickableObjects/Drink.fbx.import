@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://da40n40nh4sm0"
-path="res://.godot/imported/Plattenspieler.fbx-a36a42194f79f84748481445c6f21024.scn"
+uid="uid://c1akxibl0csme"
+path="res://.godot/imported/Drink.fbx-d3d0a7534dda1ee3edf44361f1874ae5.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Plattenspieler.fbx"
-dest_files=["res://.godot/imported/Plattenspieler.fbx-a36a42194f79f84748481445c6f21024.scn"]
+source_file="res://Models/PickableObjects/Drink.fbx"
+dest_files=["res://.godot/imported/Drink.fbx-d3d0a7534dda1ee3edf44361f1874ae5.scn"]
 
 [params]
 
@@ -34,29 +34,21 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"BraunDunkel": {
+"Col1": {
 "use_external/enabled": true,
-"use_external/path": "uid://byuiqsfbdr561"
+"use_external/path": "uid://naidhyj6m8xx"
 },
-"BraunHell": {
+"Glass": {
 "use_external/enabled": true,
-"use_external/path": "uid://dnwr4ujenleli"
+"use_external/path": "uid://c37p6yb54la5u"
 },
-"Grau": {
+"Lila": {
 "use_external/enabled": true,
-"use_external/path": "uid://dfwjs0qpgdo84"
-},
-"Rot": {
-"use_external/enabled": true,
-"use_external/path": "uid://c4uctm0juyygm"
-},
-"Schwarz": {
-"use_external/enabled": true,
-"use_external/path": "uid://cixypylk4vbws"
+"use_external/path": "uid://dffsftknomd5s"
 }
 },
 "nodes": {
-"PATH:PlattenSpieler": {
+"PATH:Drink": {
 "generate/physics": true,
 "physics/body_type": 1
 }

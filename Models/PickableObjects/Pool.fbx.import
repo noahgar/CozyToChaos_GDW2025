@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://da40n40nh4sm0"
-path="res://.godot/imported/Plattenspieler.fbx-a36a42194f79f84748481445c6f21024.scn"
+uid="uid://cf0qovdqcd7a1"
+path="res://.godot/imported/Pool.fbx-2e87a2eb3cfc3651e28c71f00bb9c8d3.scn"
 
 [deps]
 
-source_file="res://Models/PickableObjects/Plattenspieler.fbx"
-dest_files=["res://.godot/imported/Plattenspieler.fbx-a36a42194f79f84748481445c6f21024.scn"]
+source_file="res://Models/PickableObjects/Pool.fbx"
+dest_files=["res://.godot/imported/Pool.fbx-2e87a2eb3cfc3651e28c71f00bb9c8d3.scn"]
 
 [params]
 
@@ -34,29 +34,21 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"BraunDunkel": {
+"Col1": {
 "use_external/enabled": true,
-"use_external/path": "uid://byuiqsfbdr561"
+"use_external/path": "uid://dffsftknomd5s"
 },
-"BraunHell": {
+"Col2": {
 "use_external/enabled": true,
-"use_external/path": "uid://dnwr4ujenleli"
+"use_external/path": "uid://blibdseksbolg"
 },
-"Grau": {
+"Water": {
 "use_external/enabled": true,
-"use_external/path": "uid://dfwjs0qpgdo84"
-},
-"Rot": {
-"use_external/enabled": true,
-"use_external/path": "uid://c4uctm0juyygm"
-},
-"Schwarz": {
-"use_external/enabled": true,
-"use_external/path": "uid://cixypylk4vbws"
+"use_external/path": "uid://bouxw1gjnumb1"
 }
 },
 "nodes": {
-"PATH:PlattenSpieler": {
+"PATH:Pool": {
 "generate/physics": true,
 "physics/body_type": 1
 }
