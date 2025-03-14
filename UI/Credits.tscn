@@ -20,20 +20,20 @@ script = ExtResource("1_7pjlb")
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
 layout_mode = 1
 offset_right = 1921.0
-offset_bottom = 1093.0
+offset_bottom = 1081.0
 stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
 handle_input_locally = false
-size = Vector2i(1921, 1093)
+size = Vector2i(1921, 1081)
 render_target_update_mode = 4
 
 [node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
 transform = Transform3D(0.989011, -0.00624465, 0.147709, -0.000464668, 0.998971, 0.0453443, -0.147841, -0.0449147, 0.987991, 0.987507, 0.666191, 3.8684)
 
 [node name="BackToMenu" type="Sprite2D" parent="SubViewportContainer"]
-position = Vector2(270, 943)
-scale = Vector2(0.226, 0.182)
+position = Vector2(233.788, 942.684)
+scale = Vector2(0.190637, 0.166684)
 texture = ExtResource("1_knjku")
 
 [node name="BackToMenu" type="Button" parent="SubViewportContainer/BackToMenu"]
@@ -60,11 +60,40 @@ text = "Back"
 flat = true
 metadata/_edit_use_anchors_ = true
 
+[node name="Creditfläche" type="Sprite2D" parent="."]
+position = Vector2(1088, 614)
+scale = Vector2(0.790649, 0.977173)
+texture = ExtResource("1_knjku")
+
 [node name="Garden01" parent="." instance=ExtResource("1_qvjrn")]
 transform = Transform3D(0.999998, 0.00177682, 0.000239895, -0.00177628, 0.999996, -0.00224026, -0.000243861, 0.00223982, 0.999997, 0, 0, 0)
 
 [node name="Lighting" parent="." instance=ExtResource("2_lqvxy")]
 timeOfDay = 0.261
 badWeather = 0.395
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.626
+anchor_top = 0.486
+anchor_right = 0.626
+anchor_bottom = 0.486
+offset_left = -614.92
+offset_top = -234.88
+offset_right = 451.08
+offset_bottom = 235.12
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/background_color = Color(0, 0.764706, 0, 0)
+theme_override_colors/font_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_fonts/font = ExtResource("2_7pjlb")
+theme_override_font_sizes/font_size = 42
+text = "Gordon - 
+Noah -
+Jil Zander - https://jilzanderart.myportfolio.com/
+Selaeyne - 
+Ian -
+"
 
 [connection signal="pressed" from="SubViewportContainer/BackToMenu/BackToMenu" to="." method="_on_back_to_menu_pressed"]
