@@ -94,7 +94,7 @@ theme_override_colors/font_color = Color(0.776471, 0.388235, 0.364706, 1)
 theme_override_fonts/font = ExtResource("2_7pjlb")
 theme_override_font_sizes/font_size = 42
 theme_override_styles/normal = SubResource("StyleBoxEmpty_petif")
-text = "Gordon
+text = "Gordon			https://bsky.app/profile/rivers.wine
 Jil Zander		https://jilzanderart.myportfolio.com/
 Selaeyne		https://www.instagram.com/selaeyne/
 Noah
