@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cpnhry04be51m"]
+[gd_scene load_steps=19 format=3 uid="uid://cpnhry04be51m"]
 
 [ext_resource type="Script" uid="uid://bc570fk7rpdfk" path="res://UI/main_menu.gd" id="1_8aown"]
 [ext_resource type="FontFile" uid="uid://cqrw645ej8m4p" path="res://UI/Fonts/Cooper-SemiBold.otf" id="1_b37jj"]
@@ -15,6 +15,7 @@
 [ext_resource type="Script" uid="uid://dcsbie22um5l3" path="res://Gameplay/Scripts/Inventory.gd" id="14_mxdcs"]
 [ext_resource type="PackedScene" uid="uid://bvslyo7i4q746" path="res://Models/PickableObjects/Schirm.fbx" id="15_nsmmc"]
 [ext_resource type="PackedScene" uid="uid://dhdpysprppgop" path="res://Models/PickableObjects/Hocker.fbx" id="16_84toi"]
+[ext_resource type="PackedScene" uid="uid://bclsxs2xudt52" path="res://Gameplay/TScenes/audio.tscn" id="17_fxi16"]
 [ext_resource type="PackedScene" uid="uid://c74c2dj5043kx" path="res://Models/PickableObjects/Planze02_New.fbx" id="17_g341i"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x8sin"]
@@ -156,6 +157,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0764565, 0.070802, -0.43356
 process_mode = 4
 physics_interpolation_mode = 2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0811675, 0.976024, -0.292246)
+
+[node name="Audio" parent="." instance=ExtResource("17_fxi16")]
 
 [connection signal="pressed" from="SubViewportContainer/Start/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="SubViewportContainer/Credits/Credits" to="." method="_on_credits_pressed"]
