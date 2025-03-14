@@ -46,6 +46,12 @@ _subresources={
 "use_external/enabled": true,
 "use_external/path": "uid://ci37r1f8y3j67"
 }
+},
+"nodes": {
+"PATH:Bombe": {
+"generate/physics": true,
+"physics/body_type": 1
+}
 }
 }
 fbx/importer=0
