@@ -46,13 +46,13 @@ render_target_update_mode = 4
 transform = Transform3D(0.989011, -0.00624465, 0.147709, -0.000464668, 0.998971, 0.0453443, -0.147841, -0.0449147, 0.987991, 0.987507, 0.666191, 3.8684)
 
 [node name="Logo" type="Sprite2D" parent="SubViewportContainer"]
-position = Vector2(644, 505)
-scale = Vector2(0.593607, 0.593607)
+position = Vector2(609, 344)
+scale = Vector2(0.558625, 0.593607)
 texture = ExtResource("2_fxi16")
 offset = Vector2(0.6, 0)
 
 [node name="Start" type="Sprite2D" parent="SubViewportContainer"]
-position = Vector2(1534.91, 506.578)
+position = Vector2(1534.91, 496.578)
 scale = Vector2(0.229575, 0.170746)
 texture = ExtResource("2_otjfi")
 
@@ -72,7 +72,7 @@ text = "Start"
 flat = true
 
 [node name="Credits" type="Sprite2D" parent="SubViewportContainer"]
-position = Vector2(1528, 711)
+position = Vector2(1528, 696)
 scale = Vector2(0.225586, 0.18236)
 texture = ExtResource("3_obtq6")
 
@@ -93,8 +93,8 @@ text = "Credits
 flat = true
 
 [node name="Exit" type="Sprite2D" parent="SubViewportContainer"]
-position = Vector2(1522, 939)
-scale = Vector2(0.229492, 0.184711)
+position = Vector2(1526, 901.428)
+scale = Vector2(0.225586, 0.177316)
 texture = ExtResource("3_obtq6")
 
 [node name="Exit" type="Button" parent="SubViewportContainer/Exit"]
