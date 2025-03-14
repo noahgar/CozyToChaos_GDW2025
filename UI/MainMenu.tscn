@@ -1,34 +1,22 @@
-[gd_scene load_steps=8 format=3 uid="uid://cpnhry04be51m"]
+[gd_scene load_steps=18 format=3 uid="uid://cpnhry04be51m"]
 
 [ext_resource type="Script" uid="uid://bc570fk7rpdfk" path="res://UI/main_menu.gd" id="1_8aown"]
 [ext_resource type="FontFile" uid="uid://cqrw645ej8m4p" path="res://UI/Fonts/Cooper-SemiBold.otf" id="1_b37jj"]
 [ext_resource type="FontFile" uid="uid://dm5hnpgnfvl2i" path="res://UI/Fonts/Cooper-ExtraBold.otf" id="2_8aown"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b37jj"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b37jj"]
-bg_color = Color(0.758192, 0.758192, 0.758192, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 3
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8aown"]
-bg_color = Color(0.54099, 0.54099, 0.54099, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 3
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f0jmi"]
-bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 3
+[ext_resource type="Texture2D" uid="uid://bjrcu73v1svaa" path="res://UI/Sprites/titel2.png" id="2_fxi16"]
+[ext_resource type="Texture2D" uid="uid://b0toef7aw51co" path="res://UI/Sprites/button2.png" id="2_otjfi"]
+[ext_resource type="Texture2D" uid="uid://qn5suaqnoejc" path="res://UI/Sprites/button1.png" id="3_obtq6"]
+[ext_resource type="PackedScene" uid="uid://va4vcjrgfjsc" path="res://Scenes/Garden_01.scn" id="7_obtq6"]
+[ext_resource type="PackedScene" uid="uid://boeeb6v3cj317" path="res://Scenes/Lighting.scn" id="8_t4ff4"]
+[ext_resource type="PackedScene" uid="uid://dumqp8e6qran" path="res://Models/PickableObjects/Lampe_New.fbx" id="9_fxi16"]
+[ext_resource type="PackedScene" uid="uid://ciibif68ktgl6" path="res://Models/PickableObjects/Planze01_New.fbx" id="10_vsl72"]
+[ext_resource type="PackedScene" uid="uid://ci0hhhgr8bjrc" path="res://Models/PickableObjects/Hantel_New.fbx" id="11_yndlu"]
+[ext_resource type="PackedScene" uid="uid://dwfkw2487nkxc" path="res://Models/PickableObjects/Luftmatratze.fbx" id="12_v87kc"]
+[ext_resource type="PackedScene" uid="uid://bbdnlj8afwdck" path="res://Gameplay/TScenes/bird.tscn" id="13_h2xek"]
+[ext_resource type="Script" uid="uid://dcsbie22um5l3" path="res://Gameplay/Scripts/Inventory.gd" id="14_mxdcs"]
+[ext_resource type="PackedScene" uid="uid://bvslyo7i4q746" path="res://Models/PickableObjects/Schirm.fbx" id="15_nsmmc"]
+[ext_resource type="PackedScene" uid="uid://dhdpysprppgop" path="res://Models/PickableObjects/Hocker.fbx" id="16_84toi"]
+[ext_resource type="PackedScene" uid="uid://c74c2dj5043kx" path="res://Models/PickableObjects/Planze02_New.fbx" id="17_g341i"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -39,75 +27,91 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8aown")
 
-[node name="Panel" type="Panel" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -170.0
-offset_top = -29.0
-offset_right = 171.0
-offset_bottom = 228.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 13
-
-[node name="Start" type="Button" parent="VBoxContainer"]
-layout_mode = 2
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_right = 1902.0
+offset_bottom = 1093.0
+size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1900, 1093)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(0.989011, -0.00624465, 0.147709, -0.000464668, 0.998971, 0.0453443, -0.147841, -0.0449147, 0.987991, 0.987507, 0.666191, 3.8684)
+
+[node name="Logo" type="Sprite2D" parent="SubViewportContainer"]
+position = Vector2(644, 505)
+scale = Vector2(0.593607, 0.593607)
+texture = ExtResource("2_fxi16")
+offset = Vector2(0.6, 0)
+
+[node name="Button2" type="Sprite2D" parent="SubViewportContainer"]
+position = Vector2(1534.91, 506.578)
+scale = Vector2(0.229575, 0.170746)
+texture = ExtResource("2_otjfi")
+
+[node name="Start" type="Button" parent="SubViewportContainer/Button2"]
+offset_left = -714.223
+offset_top = -661.301
+offset_right = 619.777
+offset_bottom = 335.699
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.776563, 0.389183, 0.364185, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_b37jj")
-theme_override_font_sizes/font_size = 22
-theme_override_styles/focus = SubResource("StyleBoxEmpty_b37jj")
-theme_override_styles/hover = SubResource("StyleBoxFlat_b37jj")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8aown")
-theme_override_styles/normal = SubResource("StyleBoxFlat_f0jmi")
+theme_override_font_sizes/font_size = 361
 text = "Start"
+flat = true
+metadata/_edit_use_anchors_ = true
 
-[node name="Credits" type="Button" parent="VBoxContainer"]
-layout_mode = 2
+[node name="Button3" type="Sprite2D" parent="SubViewportContainer"]
+position = Vector2(1528, 711)
+scale = Vector2(0.225586, 0.18236)
+texture = ExtResource("3_obtq6")
+
+[node name="Credits" type="Button" parent="SubViewportContainer/Button3"]
+offset_left = -670.595
+offset_top = -628.156
+offset_right = 663.405
+offset_bottom = 368.844
 size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.776563, 0.389183, 0.364185, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_b37jj")
-theme_override_font_sizes/font_size = 22
-theme_override_styles/focus = SubResource("StyleBoxEmpty_b37jj")
-theme_override_styles/hover = SubResource("StyleBoxFlat_b37jj")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8aown")
-theme_override_styles/normal = SubResource("StyleBoxFlat_f0jmi")
-text = "Credits"
+theme_override_font_sizes/font_size = 336
+text = "Credits
+"
+flat = true
+metadata/_edit_use_anchors_ = true
 
-[node name="Exit" type="Button" parent="VBoxContainer"]
-layout_mode = 2
+[node name="Button4" type="Sprite2D" parent="SubViewportContainer"]
+position = Vector2(1522, 939)
+scale = Vector2(0.229492, 0.184711)
+texture = ExtResource("3_obtq6")
+
+[node name="Exit" type="Button" parent="SubViewportContainer/Button4"]
+offset_left = -659.372
+offset_top = -668.952
+offset_right = 674.628
+offset_bottom = 328.048
 size_flags_vertical = 3
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.776563, 0.389183, 0.364185, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_b37jj")
-theme_override_font_sizes/font_size = 22
-theme_override_styles/focus = SubResource("StyleBoxEmpty_b37jj")
-theme_override_styles/hover = SubResource("StyleBoxFlat_b37jj")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_8aown")
-theme_override_styles/normal = SubResource("StyleBoxFlat_f0jmi")
+theme_override_font_sizes/font_size = 341
 text = "Exit"
+flat = true
 
 [node name="Label" type="Label" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -128,6 +132,68 @@ text = "Cozy to Chaos"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
-[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]
+[node name="Garden01" parent="." instance=ExtResource("7_obtq6")]
+transform = Transform3D(0.999998, 0.00177682, 0.000239895, -0.00177628, 0.999996, -0.00224026, -0.000243861, 0.00223982, 0.999997, 0, 0, 0)
+
+[node name="Lighting" parent="." instance=ExtResource("8_t4ff4")]
+timeOfDay = 0.261
+badWeather = 0.395
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 262.0
+offset_top = -88.0
+offset_right = 603.0
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.8309, 1.8309)
+theme_override_constants/separation = 13
+alignment = 1
+
+[node name="Lampe_New" parent="." instance=ExtResource("9_fxi16")]
+process_mode = 4
+physics_interpolation_mode = 2
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.08723, 0.0533681, 1.59907)
+
+[node name="Planze01_New" parent="." instance=ExtResource("10_vsl72")]
+process_mode = 4
+physics_interpolation_mode = 2
+transform = Transform3D(0.555701, 0, -0.831382, 0, 1, 0, 0.831382, 0, 0.555701, 2.77215, 0.0431374, 0.937741)
+
+[node name="Hantel_New" parent="." instance=ExtResource("11_yndlu")]
+process_mode = 4
+physics_interpolation_mode = 2
+transform = Transform3D(0.587489, 0, -0.809232, 0, 1, 0, 0.809232, 0, 0.587489, 1.21748, 0.0436969, 1.46849)
+
+[node name="Luftmatratze" parent="." instance=ExtResource("12_v87kc")]
+process_mode = 4
+physics_interpolation_mode = 2
+transform = Transform3D(0.693226, 0, -0.720721, 0, 1, 0, 0.720721, 0, 0.693226, -1.13311, 0.0147288, -4.52699)
+
+[node name="Bird" parent="." instance=ExtResource("13_h2xek")]
+transform = Transform3D(-0.468595, 0.00347804, 0.851096, -0.0395237, 0.970432, -0.0257273, -0.850185, -0.0470306, -0.467901, -5.50982, 1.71521, 8.91852)
+script = ExtResource("14_mxdcs")
+
+[node name="Schirm" parent="." instance=ExtResource("15_nsmmc")]
+process_mode = 4
+physics_interpolation_mode = 2
+transform = Transform3D(0.913602, 0.406609, 0, -0.406609, 0.913602, 0, 0, 0, 1, 2.36458, 0.0605735, -0.00418705)
+
+[node name="Hocker" parent="." instance=ExtResource("16_84toi")]
+process_mode = 4
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0764565, 0.070802, -0.433564)
+
+[node name="Planze02_New" parent="." instance=ExtResource("17_g341i")]
+process_mode = 4
+physics_interpolation_mode = 2
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0811675, 0.976024, -0.292246)
+
+[connection signal="pressed" from="SubViewportContainer/Button2/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="SubViewportContainer/Button3/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="SubViewportContainer/Button4/Exit" to="." method="_on_exit_pressed"]
