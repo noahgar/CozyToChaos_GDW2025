@@ -38,6 +38,12 @@ _subresources={
 "use_external/enabled": true,
 "use_external/path": "uid://cbevrpblslpri"
 }
+},
+"nodes": {
+"PATH:Leiter": {
+"generate/physics": true,
+"physics/body_type": 1
+}
 }
 }
 fbx/importer=0

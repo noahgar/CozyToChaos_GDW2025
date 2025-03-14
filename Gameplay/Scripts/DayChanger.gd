@@ -7,10 +7,13 @@ extends Node3D
 
 func setDayActive():
 	for node in makeVisibleArray:
-		node.visible = true
+		if node:
+			node.visible = true
 	for node in makeInvisibleArray:
-		node.visible = false
+		if node:
+			node.visible = false
 
 func setDayInactive():
 	for node in makeVisibleArray:
-		node.visible = false
+		if node:
+			node.visible = false
