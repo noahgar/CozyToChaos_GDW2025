@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://bc570fk7rpdfk" path="res://UI/main_menu.gd" id="1_8aown"]
 [ext_resource type="FontFile" uid="uid://cqrw645ej8m4p" path="res://UI/Fonts/Cooper-SemiBold.otf" id="1_b37jj"]
-[ext_resource type="FontFile" uid="uid://dm5hnpgnfvl2i" path="res://UI/Fonts/Cooper-ExtraBold.otf" id="2_8aown"]
 [ext_resource type="Texture2D" uid="uid://bjrcu73v1svaa" path="res://UI/Sprites/titel2.png" id="2_fxi16"]
 [ext_resource type="Texture2D" uid="uid://b0toef7aw51co" path="res://UI/Sprites/button2.png" id="2_otjfi"]
 [ext_resource type="Texture2D" uid="uid://qn5suaqnoejc" path="res://UI/Sprites/button1.png" id="3_obtq6"]
@@ -18,6 +17,8 @@
 [ext_resource type="PackedScene" uid="uid://dhdpysprppgop" path="res://Models/PickableObjects/Hocker.fbx" id="16_84toi"]
 [ext_resource type="PackedScene" uid="uid://c74c2dj5043kx" path="res://Models/PickableObjects/Planze02_New.fbx" id="17_g341i"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x8sin"]
+
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -30,7 +31,7 @@ script = ExtResource("1_8aown")
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
 layout_mode = 0
 offset_left = 2.0
-offset_right = 1902.0
+offset_right = 1920.0
 offset_bottom = 1093.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -38,7 +39,7 @@ stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
 handle_input_locally = false
-size = Vector2i(1900, 1093)
+size = Vector2i(1918, 1093)
 render_target_update_mode = 4
 
 [node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
@@ -50,87 +51,66 @@ scale = Vector2(0.593607, 0.593607)
 texture = ExtResource("2_fxi16")
 offset = Vector2(0.6, 0)
 
-[node name="Button2" type="Sprite2D" parent="SubViewportContainer"]
+[node name="Start" type="Sprite2D" parent="SubViewportContainer"]
 position = Vector2(1534.91, 506.578)
 scale = Vector2(0.229575, 0.170746)
 texture = ExtResource("2_otjfi")
 
-[node name="Start" type="Button" parent="SubViewportContainer/Button2"]
+[node name="Start" type="Button" parent="SubViewportContainer/Start"]
 offset_left = -714.223
 offset_top = -661.301
 offset_right = 619.777
 offset_bottom = 335.699
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0.776563, 0.389183, 0.364185, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_colors/font_pressed_color = Color(0.776471, 0.388235, 0.364706, 1)
 theme_override_fonts/font = ExtResource("1_b37jj")
 theme_override_font_sizes/font_size = 361
+theme_override_styles/focus = SubResource("StyleBoxEmpty_x8sin")
 text = "Start"
 flat = true
-metadata/_edit_use_anchors_ = true
 
-[node name="Button3" type="Sprite2D" parent="SubViewportContainer"]
+[node name="Credits" type="Sprite2D" parent="SubViewportContainer"]
 position = Vector2(1528, 711)
 scale = Vector2(0.225586, 0.18236)
 texture = ExtResource("3_obtq6")
 
-[node name="Credits" type="Button" parent="SubViewportContainer/Button3"]
+[node name="Credits" type="Button" parent="SubViewportContainer/Credits"]
 offset_left = -670.595
 offset_top = -628.156
 offset_right = 663.405
 offset_bottom = 368.844
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0.776563, 0.389183, 0.364185, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_colors/font_pressed_color = Color(0.776471, 0.388235, 0.364706, 1)
 theme_override_fonts/font = ExtResource("1_b37jj")
 theme_override_font_sizes/font_size = 336
+theme_override_styles/focus = SubResource("StyleBoxEmpty_x8sin")
 text = "Credits
 "
 flat = true
-metadata/_edit_use_anchors_ = true
 
-[node name="Button4" type="Sprite2D" parent="SubViewportContainer"]
+[node name="Exit" type="Sprite2D" parent="SubViewportContainer"]
 position = Vector2(1522, 939)
 scale = Vector2(0.229492, 0.184711)
 texture = ExtResource("3_obtq6")
 
-[node name="Exit" type="Button" parent="SubViewportContainer/Button4"]
+[node name="Exit" type="Button" parent="SubViewportContainer/Exit"]
 offset_left = -659.372
 offset_top = -668.952
 offset_right = 674.628
 offset_bottom = 328.048
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0.776563, 0.389183, 0.364185, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_colors/font_pressed_color = Color(0.776471, 0.388235, 0.364706, 1)
 theme_override_fonts/font = ExtResource("1_b37jj")
 theme_override_font_sizes/font_size = 341
+theme_override_styles/focus = SubResource("StyleBoxEmpty_x8sin")
 text = "Exit"
 flat = true
-
-[node name="Label" type="Label" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -387.0
-offset_top = -247.0
-offset_right = 387.0
-offset_bottom = -35.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 6
-theme_override_fonts/font = ExtResource("2_8aown")
-theme_override_font_sizes/font_size = 88
-text = "Cozy to Chaos"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="Garden01" parent="." instance=ExtResource("7_obtq6")]
 transform = Transform3D(0.999998, 0.00177682, 0.000239895, -0.00177628, 0.999996, -0.00224026, -0.000243861, 0.00223982, 0.999997, 0, 0, 0)
@@ -138,23 +118,6 @@ transform = Transform3D(0.999998, 0.00177682, 0.000239895, -0.00177628, 0.999996
 [node name="Lighting" parent="." instance=ExtResource("8_t4ff4")]
 timeOfDay = 0.261
 badWeather = 0.395
-
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-visible = false
-layout_mode = 2
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 262.0
-offset_top = -88.0
-offset_right = 603.0
-offset_bottom = 216.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(1.8309, 1.8309)
-theme_override_constants/separation = 13
-alignment = 1
 
 [node name="Lampe_New" parent="." instance=ExtResource("9_fxi16")]
 process_mode = 4
@@ -194,6 +157,6 @@ process_mode = 4
 physics_interpolation_mode = 2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0811675, 0.976024, -0.292246)
 
-[connection signal="pressed" from="SubViewportContainer/Button2/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="SubViewportContainer/Button3/Credits" to="." method="_on_credits_pressed"]
-[connection signal="pressed" from="SubViewportContainer/Button4/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="SubViewportContainer/Start/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="SubViewportContainer/Credits/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="SubViewportContainer/Exit/Exit" to="." method="_on_exit_pressed"]
