@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=3 uid="uid://to1lsg346qn8"]
+
+[ext_resource type="Texture2D" uid="uid://qn5suaqnoejc" path="res://UI/Sprites/button1.png" id="1_73kip"]
+[ext_resource type="FontFile" uid="uid://cqrw645ej8m4p" path="res://UI/Fonts/Cooper-SemiBold.otf" id="2_kuww5"]
+[ext_resource type="Script" uid="uid://myr23yj7vs6x" path="res://UI/return_to_menu.gd" id="3_wf1sp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f8btd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pbsus"]
+
+[node name="PauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ReturnToMenu" type="Sprite2D" parent="."]
+position = Vector2(945, 782)
+scale = Vector2(0.29, 0.23)
+texture = ExtResource("1_73kip")
+
+[node name="ReturnToMenu" type="Button" parent="ReturnToMenu"]
+offset_left = -820.69
+offset_top = -400.0
+offset_right = 892.31
+offset_bottom = 171.0
+theme_override_colors/font_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_colors/font_focus_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_colors/font_pressed_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_fonts/font = ExtResource("2_kuww5")
+theme_override_font_sizes/font_size = 300
+theme_override_styles/focus = SubResource("StyleBoxEmpty_f8btd")
+text = "Main Menu"
+flat = true
+script = ExtResource("3_wf1sp")
+metadata/_edit_use_anchors_ = true
+
+[node name="Resume" type="Sprite2D" parent="."]
+position = Vector2(945, 542)
+scale = Vector2(0.29, 0.23)
+texture = ExtResource("1_73kip")
+
+[node name="Resume" type="Button" parent="Resume"]
+offset_left = -603.448
+offset_top = -404.348
+offset_right = 603.552
+offset_bottom = 166.652
+theme_override_colors/font_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_colors/font_focus_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_colors/font_pressed_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_fonts/font = ExtResource("2_kuww5")
+theme_override_font_sizes/font_size = 300
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pbsus")
+text = "Resume"
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="ReturnToMenu/ReturnToMenu" to="ReturnToMenu/ReturnToMenu" method="ReturnToMenu_on_pressed"]
