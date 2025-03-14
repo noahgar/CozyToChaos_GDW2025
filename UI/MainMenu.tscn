@@ -117,8 +117,7 @@ flat = true
 transform = Transform3D(0.999998, 0.00177682, 0.000239895, -0.00177628, 0.999996, -0.00224026, -0.000243861, 0.00223982, 0.999997, 0, 0, 0)
 
 [node name="Lighting" parent="." instance=ExtResource("8_t4ff4")]
-timeOfDay = 0.261
-badWeather = 0.395
+timeOfDay = 0.363
 
 [node name="Lampe_New" parent="." instance=ExtResource("9_fxi16")]
 process_mode = 4

@@ -1,4 +1,4 @@
-extends Node3D
+class_name EnvironmentController extends Node3D
 
 #TimeOfDay sollte ein wert zwischen 0-1 sein. Für die Rotation der Sonne bin ich mir nicht sicher, vielleicht einfach gar nicht rotieren?
 #timeOfDay = 0 -> Nacht, timeOfDay = 0.5 -> Tag, timeOfDay = 1 -> Nacht

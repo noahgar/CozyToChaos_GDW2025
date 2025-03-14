@@ -2,20 +2,17 @@ class_name RootSceneScript extends Node3D
 
 @export var birdFlap:AudioStreamPlayer
 var birdInventory:inventory
-var camera:cameraRotation
-var BirdHouse:birdHouseScript
-var Garden:gardenScript
-var hudScript:HudScript
+@export var camera:cameraRotation
+@export var BirdHouse:birdHouseScript
+@export var Garden:gardenScript
+@export var hudScript:HudScript
+@export var lighting:EnvironmentController
 var isOutside:bool
 var currentDay:int = 1
 var currentStep:int = 0
 
 func _ready() -> void:
-	Garden = $Garden01
-	BirdHouse = $BirdHouse
 	birdInventory = $CameraHUD/Pivot/Bird
-	camera = $CameraHUD
-	hudScript = $Hud
 	Garden.visible = false
 	BirdHouse.visible = true
 	isOutside = false
