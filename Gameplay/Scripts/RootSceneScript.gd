@@ -7,6 +7,7 @@ var birdInventory:inventory
 @export var Garden:gardenScript
 @export var hudScript:HudScript
 @export var lighting:EnvironmentController
+@export var timer:Timer
 var isOutside:bool
 var currentDay:int = 1
 var currentStep:int = 0
@@ -17,6 +18,23 @@ func _ready() -> void:
 	BirdHouse.visible = true
 	isOutside = false
 	camera.changeScene(false)
+	timer.timeout.connect(timeRanOut)
+	hudScript.setClock(0)
+
+func _process(_delta: float) -> void:
+	if !timer.is_stopped():
+		var timeOfDay = 1-timer.time_left/timer.wait_time
+		hudScript.setClock(timeOfDay)
+		if timeOfDay<0.5:
+			lighting.timeOfDay = timeOfDay
+		else:
+			lighting.timeOfDay = 1-timeOfDay
+
+func timeRanOut():
+	timer.stop()
+	hudScript.setClock(1)
+	if isOutside:
+		goToBirdHouse()
 
 func goToBirdHouse():
 	Garden.visible = false
@@ -32,7 +50,8 @@ func goToGarden():
 	isOutside = true
 	camera.changeScene(true)
 	proceedToStep(1)
-	if birdFlap != null: birdFlap.play()  
+	if birdFlap != null: birdFlap.play()
+	timer.start()
 
 func proceedToStep(step:int):
 	currentStep = step
@@ -49,5 +68,8 @@ func proceedToStep(step:int):
 			pass
 		5: #night (sleeping transition)
 			hudScript.playNightAnim()
+			timer.stop()
+			lighting.timeOfDay = 0
+			hudScript.setClock(0)
 			Garden.dayProgressManager.incrementDay()
 			proceedToStep(0)

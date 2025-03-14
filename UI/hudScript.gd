@@ -13,6 +13,9 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	$RichTextLabel.set_position(lerp($RichTextLabel.position,get_local_mouse_position()-Vector2($RichTextLabel.size.x/2,$RichTextLabel.size.y+20),0.2),false)
 
+func setClock(time:float):
+	$Control/Pfeil.rotation_degrees = -(time*120-60)
+
 func playNightAnim():
 	$Night.visible = true
 	$Night/CenterContainer/Control/Night.play()

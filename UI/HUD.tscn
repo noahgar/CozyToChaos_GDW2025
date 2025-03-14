@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cqd5knljw3e7d"]
+[gd_scene load_steps=18 format=3 uid="uid://cqd5knljw3e7d"]
 
 [ext_resource type="Script" uid="uid://0soigeh5nfq6" path="res://UI/hudScript.gd" id="1_yixhe"]
 [ext_resource type="Texture2D" uid="uid://djjqp43wdvrys" path="res://UI/GIFs/Night/Night-0.png" id="2_gppie"]
@@ -11,6 +11,9 @@
 [ext_resource type="Texture2D" uid="uid://dqgtse4i8co73" path="res://UI/GIFs/SunUp/SunUp-2.png" id="9_mms7u"]
 [ext_resource type="Texture2D" uid="uid://bj4kl1ywt3d4k" path="res://UI/GIFs/SunUp/SunUp-3.png" id="10_281ki"]
 [ext_resource type="Texture2D" uid="uid://cq2ur3thvqn6s" path="res://UI/GIFs/SunUp/SunUp-4.png" id="11_w37wn"]
+[ext_resource type="Texture2D" uid="uid://bek6ukltasmk6" path="res://UI/Sprites/zeit anzeige.png" id="12_281ki"]
+[ext_resource type="Texture2D" uid="uid://eavinuy1665y" path="res://UI/Sprites/pfeil.png" id="13_w37wn"]
+[ext_resource type="Texture2D" uid="uid://cwcrm4ihlvuj0" path="res://UI/Sprites/kreis.png" id="14_kg6a8"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_am7sw"]
 animations = [{
@@ -91,6 +94,33 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_yixhe")
 
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -278.0
+offset_top = 2.0
+offset_right = 278.0
+offset_bottom = 352.0
+grow_horizontal = 2
+
+[node name="ZeitAnzeige" type="Sprite2D" parent="Control"]
+position = Vector2(-529, 129)
+scale = Vector2(0.248333, 0.248333)
+texture = ExtResource("12_281ki")
+
+[node name="Pfeil" type="Sprite2D" parent="Control"]
+position = Vector2(-525, 32)
+scale = Vector2(0.149313, 0.149313)
+texture = ExtResource("13_w37wn")
+offset = Vector2(-34.395, 393.51)
+
+[node name="Kreis" type="Sprite2D" parent="Control"]
+position = Vector2(-526, 35)
+scale = Vector2(0.055, 0.055)
+texture = ExtResource("14_kg6a8")
+
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 1
 anchors_preset = -1
@@ -105,7 +135,6 @@ offset_bottom = 74.968
 mouse_filter = 2
 theme_override_constants/outline_size = 4
 theme_override_font_sizes/normal_font_size = 24
-text = "Info Text"
 fit_content = true
 scroll_active = false
 horizontal_alignment = 1
