@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://8hoagoyyk5me"]
 
-[ext_resource type="Script" uid="uid://i1gsxlu18d7w" path="res://UI/credits.gd" id="1_7pjlb"]
+[ext_resource type="Script" path="res://UI/credits.gd" id="1_7pjlb"]
 [ext_resource type="Texture2D" uid="uid://qn5suaqnoejc" path="res://UI/Sprites/button1.png" id="1_knjku"]
 [ext_resource type="PackedScene" uid="uid://va4vcjrgfjsc" path="res://Scenes/Garden_01.scn" id="1_qvjrn"]
 [ext_resource type="FontFile" uid="uid://cqrw645ej8m4p" path="res://UI/Fonts/Cooper-SemiBold.otf" id="2_7pjlb"]
@@ -97,8 +97,8 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_petif")
 text = "Gordon			https://bsky.app/profile/rivers.wine
 Jil Zander		https://jilzanderart.myportfolio.com/
 Selaeyne		https://www.instagram.com/selaeyne/
-Noah
-Ian
+Noah				https://noahgar.artstation.com
+Ian 					https://www.artstation.com/bvcket
 "
 
 [node name="Credits Überschrift" type="TextEdit" parent="."]
