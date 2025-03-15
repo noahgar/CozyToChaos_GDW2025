@@ -12,7 +12,7 @@ var currentRealRotation:float = 0
 @export var cameraRotationDownIndoor:float = -15
 @export var cameraRotationDownOutdoor:float = -45
 
-@export var cameraPivotDownwardsTransformInside:float = 2
+@export var cameraPivotDownwardsTransformInside:float = 5
 @export var cameraPivotDownwardsTransformOutside:float = -2.5
 
 func _ready():
