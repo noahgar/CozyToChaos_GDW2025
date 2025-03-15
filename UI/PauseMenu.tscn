@@ -1,12 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://to1lsg346qn8"]
+[gd_scene load_steps=8 format=3 uid="uid://to1lsg346qn8"]
 
 [ext_resource type="Texture2D" uid="uid://qn5suaqnoejc" path="res://UI/Sprites/button1.png" id="1_73kip"]
 [ext_resource type="FontFile" uid="uid://cqrw645ej8m4p" path="res://UI/Fonts/Cooper-SemiBold.otf" id="2_kuww5"]
 [ext_resource type="Script" uid="uid://myr23yj7vs6x" path="res://UI/return_to_menu.gd" id="3_wf1sp"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f8btd"]
+[ext_resource type="Script" uid="uid://dt7r7wjj46kwx" path="res://UI/resume.gd" id="4_kuww5"]
+[ext_resource type="Script" uid="uid://dq6qg7exn2dn3" path="res://UI/pauseButton.gd" id="5_wf1sp"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pbsus"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f8btd"]
 
 [node name="PauseMenu" type="Control"]
 layout_mode = 3
@@ -15,13 +17,61 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
-[node name="ReturnToMenu" type="Sprite2D" parent="."]
+[node name="Pausee" type="Sprite2D" parent="."]
+position = Vector2(1839, 82)
+scale = Vector2(0.0712696, 0.12623)
+texture = ExtResource("1_73kip")
+
+[node name="Pause" type="Button" parent="Pausee"]
+anchors_preset = -1
+anchor_left = 0.178272
+anchor_top = -0.251266
+anchor_right = 0.438526
+anchor_bottom = 0.0221716
+offset_left = -1235.03
+offset_top = -190.467
+offset_right = -28.035
+offset_bottom = 380.533
+theme_override_colors/font_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_colors/font_focus_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_colors/font_pressed_color = Color(0.776471, 0.388235, 0.364706, 1)
+theme_override_fonts/font = ExtResource("2_kuww5")
+theme_override_font_sizes/font_size = 670
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pbsus")
+text = "I I"
+flat = true
+script = ExtResource("5_wf1sp")
+metadata/_edit_use_anchors_ = true
+
+[node name="PauseMenu" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1880.0
+offset_bottom = -1040.0
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="PauseMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 48.266
+anchor_bottom = 27.098
+offset_right = -8.64014
+offset_bottom = 2.07996
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.760784)
+
+[node name="ReturnToMenu" type="Sprite2D" parent="PauseMenu"]
 position = Vector2(945, 782)
 scale = Vector2(0.29, 0.23)
 texture = ExtResource("1_73kip")
 
-[node name="ReturnToMenu" type="Button" parent="ReturnToMenu"]
+[node name="ReturnToMenu" type="Button" parent="PauseMenu/ReturnToMenu"]
 offset_left = -820.69
 offset_top = -400.0
 offset_right = 892.31
@@ -37,12 +87,12 @@ flat = true
 script = ExtResource("3_wf1sp")
 metadata/_edit_use_anchors_ = true
 
-[node name="Resume" type="Sprite2D" parent="."]
+[node name="Resume" type="Sprite2D" parent="PauseMenu"]
 position = Vector2(945, 542)
 scale = Vector2(0.29, 0.23)
 texture = ExtResource("1_73kip")
 
-[node name="Resume" type="Button" parent="Resume"]
+[node name="Resume" type="Button" parent="PauseMenu/Resume"]
 offset_left = -603.448
 offset_top = -404.348
 offset_right = 603.552
@@ -55,6 +105,9 @@ theme_override_font_sizes/font_size = 300
 theme_override_styles/focus = SubResource("StyleBoxEmpty_pbsus")
 text = "Resume"
 flat = true
+script = ExtResource("4_kuww5")
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="ReturnToMenu/ReturnToMenu" to="ReturnToMenu/ReturnToMenu" method="ReturnToMenu_on_pressed"]
+[connection signal="pressed" from="Pausee/Pause" to="Pausee/Pause" method="_on_pressed"]
+[connection signal="pressed" from="PauseMenu/ReturnToMenu/ReturnToMenu" to="PauseMenu/ReturnToMenu/ReturnToMenu" method="ReturnToMenu_on_pressed"]
+[connection signal="pressed" from="PauseMenu/Resume/Resume" to="PauseMenu/Resume/Resume" method="_on_pressed"]

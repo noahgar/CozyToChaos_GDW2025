@@ -80,17 +80,26 @@ func decideTooltipText():
 				hideTooltip()
 		elif mostImportantObject is DoorToBirdHouse:
 			if root.currentStep == 2:
-				showAndUpdateTooltip("Fly home")
+				if root.birdInventory.CurrentlyHolding:
+					showAndUpdateTooltip("Fly home")
+				else:
+					showAndUpdateTooltip("Pick up object to fly home")
 			else:
 				showAndUpdateTooltip("Gotta pick something up")
 		elif mostImportantObject is DoorToGarden:
 			if root.currentStep == 0:
-				showAndUpdateTooltip("Fly out")
+				if !root.birdInventory.CurrentlyHolding:
+					showAndUpdateTooltip("Fly out")
+				else:
+					showAndUpdateTooltip("Put down object to fly out")
 			else:
 				showAndUpdateTooltip("Too tired to fly out")
 		elif mostImportantObject is BedScript:
 			if root.currentStep == 4:
-				showAndUpdateTooltip("Sleep")
+				if !root.birdInventory.CurrentlyHolding:
+					showAndUpdateTooltip("Sleep")
+				else:
+					showAndUpdateTooltip("Put down object to sleep")
 			else:
 				showAndUpdateTooltip("Not sleepy")
 	else:

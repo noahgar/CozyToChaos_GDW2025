@@ -42,6 +42,9 @@ func goToBirdHouse():
 	isOutside = false
 	camera.changeScene(false)
 	proceedToStep(3)
+	var root:RootSceneScript = get_tree().root.get_child(0)
+	if !root.birdInventory.CurrentlyHolding:
+		proceedToStep(4)
 	if birdFlap != null: birdFlap.play()
 
 func goToGarden():

@@ -16,7 +16,8 @@ func setDayActive():
 			node.visible = true
 	for node in makeInvisibleArray:
 		if node:
-			node.visible = false
+			if node.get_parent_node_3d() is not birdHouseScript:
+				node.visible = false
 
 func setDayInactive():
 	for node in makeVisibleArray:

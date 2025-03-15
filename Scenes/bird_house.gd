@@ -26,8 +26,9 @@ func _on_input_event(_camera: Node, event: InputEvent, _event_position: Vector3,
 		if event.button_mask&(MOUSE_BUTTON_MASK_LEFT):
 			var root:RootSceneScript = get_tree().root.get_child(0)
 			root.hudScript.removeFromHoveredArray($BirdHouse_Bed)
-			if root.currentStep == 4:
-				root.proceedToStep(5)
+			if !root.birdInventory.CurrentlyHolding:
+				if root.currentStep == 4:
+					root.proceedToStep(5)
 
 func _on_mouse_entered() -> void:
 	var root:RootSceneScript = get_tree().root.get_child(0)
